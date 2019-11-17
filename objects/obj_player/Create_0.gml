@@ -4,7 +4,8 @@
 velocity_player = 4;
 temp_velocity_player = velocity_player;
 imageSpeed_player = 1
-
+hinput = 0;
+spd = 1
 
 // Iniciar sprite
 sprite_index = spr_player_down;

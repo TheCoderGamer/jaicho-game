@@ -1,85 +1,18 @@
 /// @description Movimiento jugador
 
+hinput = keyboard_check(vk_right) - keyboard_check(vk_left);
+vinput = keyboard_check(vk_down) - keyboard_check(vk_up);
 
-
-// Movimiento jugador & sprites
-if keyboard_check(vk_left) && place_free(x-1,y) //izqda
+if hinput !=0 or vinput !=0
 	{
-	temp_velocity_player = velocity_player
-	direction = 180;
-	speed = velocity_player;
-	sprite_index = spr_player_left;
+		dir = point_direction(0,0,hinput,vinput);
+		moveX = lengthdir_x(spd, dir)
+		moveY = lengthdir_y(spd, dir)
+		
+		x += moveX
+		y += moveY 	
 	}
 
-	
-if keyboard_check(vk_right) && place_free(x+1,y) //drcha
-	{
-	temp_velocity_player = velocity_player
-	direction = 0;
-	speed = velocity_player;
-	sprite_index = spr_player_right;
-	}
-
-	
-if keyboard_check(vk_up) && place_free(x,y-1) //arriba
-	{
-	temp_velocity_player = velocity_player
-	direction = 90;
-	speed = velocity_player;
-	sprite_index = spr_player_up;
-	}
-
-	
-if keyboard_check(vk_down) && place_free(x,y+1) //abajo
-	{
-	temp_velocity_player = velocity_player
-	direction = 270;
-	speed = velocity_player;
-	sprite_index = spr_player_down;
-	}
-
-
-if keyboard_check(vk_left) && keyboard_check(vk_up) && place_free(x-1,y-1) //izqda y arriba
-	{
-	temp_velocity_player = velocity_player
-	direction = 135;
-	speed = velocity_player;
-	sprite_index = spr_player_up;
-	}	
-
-	
-if keyboard_check(vk_up) && keyboard_check(vk_right) && place_free(x+1,y-1) //arriba y drcha
-	{
-	temp_velocity_player = velocity_player
-	direction = 45;
-	speed = velocity_player;
-	sprite_index = spr_player_up;
-	}	
-
-	
-if keyboard_check(vk_right) && keyboard_check(vk_down) && place_free(x+1,y+1) //drcha y abajo
-	{
-	temp_velocity_player = velocity_player
-	direction = 315;
-	speed = velocity_player;
-	sprite_index = spr_player_down;
-	}	
-
-	
-if keyboard_check(vk_down) && keyboard_check(vk_left) && place_free(x-1,y+1) //abajo y izda
-	{
-	temp_velocity_player = velocity_player
-	direction = 225;
-	speed = velocity_player;
-	sprite_index = spr_player_down;
-	}
-
-//parar si no se pulsan teclas
-if keyboard_check_released(vk_left) or keyboard_check_released(vk_right) or keyboard_check_released(vk_up) or keyboard_check_released(vk_down)
-	{
-		temp_velocity_player = 0;
-		speed = 0;
-	}
 
 
 //Animacion si se mueve, sino no
@@ -92,6 +25,5 @@ else
 	image_speed = 0;
 	image_index = 0;
 	}
-	
-	
+
 	

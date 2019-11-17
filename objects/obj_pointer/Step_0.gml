@@ -48,7 +48,7 @@ if keyboard_check(vk_up) && keyboard_check(vk_right)//arriba y drcha
 	speed = velocity_pointer;
 	}	
 
-	
+
 if keyboard_check(vk_right) && keyboard_check(vk_down)//drcha y abajo
 	{
 	temp_velocity_pointer = velocity_pointer
@@ -70,3 +70,29 @@ if keyboard_check_released(vk_left) or keyboard_check_released(vk_right) or keyb
 	temp_velocity_pointer = 0;
 	speed = 0;
 	}
+
+
+//FullScreen
+tempo1segs += delta_time;
+if keyboard_check(vk_f4)
+   {
+   if (tempo4segs >= 1 * 1000000)
+		{
+		if window_get_fullscreen()
+			{
+				window_set_fullscreen(false);
+				tempo4segs = 0
+			}
+		else
+			{
+				window_set_fullscreen(true);
+				tempo4segs = 0
+			}
+		}
+   }
+
+
+
+
+
+
