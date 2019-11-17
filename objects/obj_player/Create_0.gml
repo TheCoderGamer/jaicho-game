@@ -1,14 +1,11 @@
 /// @description Configuracion inicial (Variables...)
 
 //VARIABLES
-velocity_player = 4;
-temp_velocity_player = velocity_player;
-imageSpeed_player = 1
-hinput = 0;
-spd = 1
+walk_spd = 2;
+run_spd = 4
+//Fullscreen
+tempo1segs = 1000000;
 
 // Iniciar sprite
-sprite_index = spr_player_down;
-image_speed = imageSpeed_player;
-image_index = 0;
+image_speed = 1;
 
