@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "2a4a739d-367d-4727-85de-eec679686845",
+            "Value": {
+                "id": "466f1f58-901f-4c85-98e2-e0a6d9f31138",
+                "resourcePath": "objects\\camera\\camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2b9fc175-d2b2-4c3c-8845-3704ea03bb69",
             "Value": {
                 "id": "cae42c67-55e3-4ff6-b27e-8304e6bb9e5f",
@@ -135,6 +143,14 @@
             }
         },
         {
+            "Key": "784fd241-bfe7-4e49-8ab1-f02d46c32261",
+            "Value": {
+                "id": "249dd799-ebbc-4edf-b996-5ee76fa9f76f",
+                "resourcePath": "views\\784fd241-bfe7-4e49-8ab1-f02d46c32261.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "796b4761-64f4-4430-a42c-4a7fefafb79c",
             "Value": {
                 "id": "321a47db-4084-4760-aaea-c6d0414128d2",
@@ -188,6 +204,14 @@
                 "id": "a3079803-deb4-4473-ba38-663ead1b8f1a",
                 "resourcePath": "rooms\\tituloJuego\\tituloJuego.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "c53b6f93-8275-4514-8426-f3ce906b2a19",
+            "Value": {
+                "id": "e65f5501-0567-449a-8c5c-c25834b9c001",
+                "resourcePath": "sprites\\spr_fondoTest\\spr_fondoTest.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
