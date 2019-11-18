@@ -12,7 +12,8 @@ vinput = keyboard_check(vk_down) - keyboard_check(vk_up); //vertical
 
 //FISICAS
 if(hinput !=0 or vinput !=0)
-	{	dir = point_direction(0,0,hinput,vinput);
+	{	image_speed = .8; //animacion
+		dir = point_direction(0,0,hinput,vinput);
 		moveX = lengthdir_x(spd, dir) //horizontal
 		moveY = lengthdir_y(spd, dir) //vertical
 		
@@ -29,7 +30,7 @@ if(hinput !=0 or vinput !=0)
 		case 315: sprite_index = spr_player_down; break; //abajo derecha
 		}
 	}
-else{image_index = 0;}
+else{image_index = 0;image_speed = 0;}
 
 //COLISION
 if moveX != 0{
@@ -49,7 +50,7 @@ if moveY != 0{
 		{repeat abs(moveY)
 			{
 				if !place_meeting(x,y+sign(moveY),obj_colision)  //vertical
-				{x += sign(moveY);}
+				{y += sign(moveY);}
 				else {break;}
 			}		
 			moveY = 0
