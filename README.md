@@ -11,10 +11,6 @@ Para probar y editar el proyecto sigue las instrucciones detalladas mas abajo
  Se necesita el programa Game Maker Studio 2 para la edicion del juego
 * [Game Maker Studio 2](https://www.yoyogames.com/gamemaker) - El motor usado
 
-```
-Give examples
-```
-
 ### Instalacion
 
 1º - Descargar Game Maker Studio 2 e instalarlo
