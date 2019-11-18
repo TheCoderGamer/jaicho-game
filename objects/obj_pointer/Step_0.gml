@@ -1,76 +1,18 @@
 /// @description Movimiento cursor
 
 // Movimiento cursor
-if keyboard_check(vk_left)//izqda
-	{
-	temp_velocity_pointer = velocity_pointer
-	direction = 180;
-	speed = velocity_pointer;
+
+hinput = keyboard_check(vk_right) - keyboard_check(vk_left);
+vinput = keyboard_check(vk_down) - keyboard_check(vk_up);
+
+if(hinput !=0 or vinput !=0)
+	{	 
+		dir = point_direction(0,0,hinput,vinput);
+		moveX = lengthdir_x(spd, dir)
+		moveY = lengthdir_y(spd, dir)
+		x += moveX
+		y += moveY 	
 	}
-
-	
-if keyboard_check(vk_right)//drcha
-	{
-	temp_velocity_pointer = velocity_pointer
-	direction = 0;
-	speed = velocity_pointer;
-	}
-
-	
-if keyboard_check(vk_up)//arriba
-	{
-	temp_velocity_pointer = velocity_pointer
-	direction = 90;
-	speed = velocity_pointer;
-	}
-
-	
-if keyboard_check(vk_down)//abajo
-	{
-	temp_velocity_pointer = velocity_pointer
-	direction = 270;
-	speed = velocity_pointer;
-	}
-
-
-if keyboard_check(vk_left) && keyboard_check(vk_up)//izqda y arriba
-	{
-	temp_velocity_pointer = velocity_pointer
-	direction = 135;
-	speed = velocity_pointer;
-	}	
-
-	
-if keyboard_check(vk_up) && keyboard_check(vk_right)//arriba y drcha
-	{
-	temp_velocity_pointer = velocity_pointer
-	direction = 45;
-	speed = velocity_pointer;
-	}	
-
-
-if keyboard_check(vk_right) && keyboard_check(vk_down)//drcha y abajo
-	{
-	temp_velocity_pointer = velocity_pointer
-	direction = 315;
-	speed = velocity_pointer;
-	}	
-
-	
-if keyboard_check(vk_down) && keyboard_check(vk_left)//abajo y izda
-	{
-	temp_velocity_pointer = velocity_pointer
-	direction = 225;
-	speed = velocity_pointer;
-	}
-
-//parar si no se pulsan teclas
-if keyboard_check_released(vk_left) or keyboard_check_released(vk_right) or keyboard_check_released(vk_up) or keyboard_check_released(vk_down)
-	{
-	temp_velocity_pointer = 0;
-	speed = 0;
-	}
-
 
 //FullScreen
 tempo1segs += delta_time;

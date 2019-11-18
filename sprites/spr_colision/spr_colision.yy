@@ -2,7 +2,7 @@
     "id": "a690a394-ba71-443e-a491-5144248e49be",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_pared1",
+    "name": "spr_colision",
     "For3D": false,
     "HTile": false,
     "VTile": false,

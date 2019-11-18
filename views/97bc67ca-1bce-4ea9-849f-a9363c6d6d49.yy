@@ -7,7 +7,7 @@
         "a690a394-ba71-443e-a491-5144248e49be"
     ],
     "filterType": "GMSprite",
-    "folderName": "pared",
+    "folderName": "utilidades",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

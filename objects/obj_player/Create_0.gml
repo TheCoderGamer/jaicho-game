@@ -3,9 +3,12 @@
 //VARIABLES
 walk_spd = 2;
 run_spd = 4
+moveX = 0
+moveY = 0
 //Fullscreen
 tempo1segs = 1000000;
 
+
 // Iniciar sprite
-image_speed = 1;
+image_speed = .8;
 

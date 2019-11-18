@@ -154,7 +154,7 @@
             "Key": "92261d70-dca3-422c-b710-cea2e4978a22",
             "Value": {
                 "id": "0b317895-1e4b-4d3d-8582-0939feb52ebf",
-                "resourcePath": "objects\\obj_pared1\\obj_pared1.yy",
+                "resourcePath": "objects\\obj_colision\\obj_colision.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -178,7 +178,7 @@
             "Key": "a690a394-ba71-443e-a491-5144248e49be",
             "Value": {
                 "id": "e1f429cd-d3f3-4f01-a89e-b8419d5d45fa",
-                "resourcePath": "sprites\\spr_pared1\\spr_pared1.yy",
+                "resourcePath": "sprites\\spr_colision\\spr_colision.yy",
                 "resourceType": "GMSprite"
             }
         },
