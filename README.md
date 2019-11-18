@@ -13,9 +13,9 @@ Para probar y editar el proyecto sigue las instrucciones detalladas mas abajo
 
 ### Instalacion
 
-1º - Descargar Game Maker Studio 2 e instalarlo
-2º - Abrir el archivo jaicho.yyp
-3º - Listo para la edicion
+*1º - Descargar Game Maker Studio 2 e instalarlo
+*2º - Abrir el archivo jaicho.yyp
+*3º - Listo para la edicion
 
 
 ## Built With
