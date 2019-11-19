@@ -47,27 +47,11 @@
             }
         },
         {
-            "Key": "071291a0-3708-4a03-8799-a422b38b98e5",
-            "Value": {
-                "id": "362d80e1-7aff-4ff1-bdd4-46462c7c4023",
-                "resourcePath": "sprites\\spr_dungeon\\spr_dungeon.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "118b4f81-8c40-4275-850d-094151539a50",
             "Value": {
                 "id": "bba6d9ae-2fbf-4489-af01-2d047971ed95",
                 "resourcePath": "views\\118b4f81-8c40-4275-850d-094151539a50.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "12f701f2-573e-4280-91de-da1f6b81ced9",
-            "Value": {
-                "id": "8e4cf44d-685c-41e1-9529-14087bd1b040",
-                "resourcePath": "sprites\\spr_dungeonwalls\\spr_dungeonwalls.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -92,6 +76,22 @@
                 "id": "6ca11f93-2e4d-4994-8a5c-95116c860c59",
                 "resourcePath": "views\\218f8237-4d79-460d-95c2-ff9430412c09.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2807a733-7710-4803-bc7e-fbbd5d40b17b",
+            "Value": {
+                "id": "0392d511-b112-4be9-bd70-2d2af25c1a2a",
+                "resourcePath": "tilesets\\ti_dungeon1\\ti_dungeon1.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "295c66ee-e449-4c84-9299-82ecf892f831",
+            "Value": {
+                "id": "2af3b81e-fd98-4afb-bdd0-a3b4e77ab9c1",
+                "resourcePath": "sprites\\spr_tile_dungeon1\\spr_tile_dungeon1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -255,14 +255,6 @@
             }
         },
         {
-            "Key": "c98e47f2-f824-4eba-a3b7-6dba9c415f25",
-            "Value": {
-                "id": "bdc7e156-bade-4ff2-843f-bd277847f693",
-                "resourcePath": "tilesets\\tl_dungeonwalls\\tl_dungeonwalls.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "3e08bc5e-589e-4482-bf1c-65738358b373",
@@ -380,14 +372,6 @@
                 "id": "0bc2eeaf-6d83-4a84-9e8a-1889b21a62a9",
                 "resourcePath": "views\\f73fed97-7a1f-469d-97b9-e443a40e8278.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "fba20114-2e88-4fae-8f1d-9dc11f5d97c5",
-            "Value": {
-                "id": "2a7c1ef5-7f12-4479-bb75-aa505a60261d",
-                "resourcePath": "tilesets\\tl_dungeon\\tl_dungeon.yy",
-                "resourceType": "GMTileSet"
             }
         }
     ],
