@@ -57,6 +57,33 @@ if moveY != 0{
 		}
 }
 
+if place_meeting(x,y,obj_spikes)
+	{
+		repeat 1
+		{
+			vida -= vida;
+		}
+		
+		
+	}
+
 //REALIZAR MOVIMIENTO
 if(hinput !=0 or vinput !=0)
 {x += moveX; y += moveY;}
+
+//.....................VIDA...................
+//if vida <= 0
+//	{
+//	room_goto(rm_death);
+//	}
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+	
