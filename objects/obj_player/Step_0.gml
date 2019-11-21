@@ -4,8 +4,8 @@
 //....................MOVIMIENTO...................
 //INPUT
 if keyboard_check(vk_control) //correr
-	{spd = run_spd}
-else{spd = walk_spd}
+	{spd = run_spd; image_speed = 0.8;}
+else{spd = walk_spd; image_speed = 0.6}
 
 hinput = keyboard_check(vk_right) - keyboard_check(vk_left); //horizontal
 vinput = keyboard_check(vk_down) - keyboard_check(vk_up); //vertical
@@ -57,14 +57,13 @@ if moveY != 0{
 		}
 }
 
-if place_meeting(x,y,obj_spikes)
+
+//Pinchos
+if timer1 < 1*1000000 + 5000 {timer1 += delta_time;} else{timer1 = 1000000;} //evitar variable con numeros muy grandes
+if timer1 > 1 * 1000000 && place_meeting(x,y,obj_spikes)
 	{
-		repeat 1
-		{
-			vida -= vida;
-		}
-		
-		
+	timer1 = 0; 
+	vida = vida-1;				
 	}
 
 //REALIZAR MOVIMIENTO
@@ -72,10 +71,12 @@ if(hinput !=0 or vinput !=0)
 {x += moveX; y += moveY;}
 
 //.....................VIDA...................
-//if vida <= 0
-//	{
-//	room_goto(rm_death);
-//	}
+if vida <= 0
+	{
+	room_goto(rm_death);
+	}
+
+
 	
 
 
