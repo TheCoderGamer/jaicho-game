@@ -95,14 +95,6 @@
             }
         },
         {
-            "Key": "29b7cbc9-3f90-4669-8d51-832aeccb818d",
-            "Value": {
-                "id": "370fd193-72c0-46c2-bb11-fe5394934207",
-                "resourcePath": "objects\\obj_camera2\\obj_camera2.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "2a4a739d-367d-4727-85de-eec679686845",
             "Value": {
                 "id": "466f1f58-901f-4c85-98e2-e0a6d9f31138",
@@ -135,14 +127,6 @@
             }
         },
         {
-            "Key": "37c82573-10b1-42c8-87d8-c8fa0f1394b2",
-            "Value": {
-                "id": "a713e0f2-08f6-4712-965e-954ed500233a",
-                "resourcePath": "objects\\obj_corazonVida2\\obj_corazonVida2.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "4043cfa7-d2c7-439b-bf80-4cd751c0d9f6",
             "Value": {
                 "id": "2cca9324-ba97-4dcb-8292-e0fd4bff2bff",
@@ -164,14 +148,6 @@
                 "id": "412175c7-098e-4152-a3f6-23591dcf5d87",
                 "resourcePath": "views\\43a5b586-eec8-41c4-b7ef-33bc1f2d9251.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "44b73199-6d83-4a0f-821a-2e73c5948bcd",
-            "Value": {
-                "id": "4391fb80-56a9-4656-b458-9605c1825b06",
-                "resourcePath": "sprites\\spr_corazonGui0\\spr_corazonGui0.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -239,10 +215,10 @@
             }
         },
         {
-            "Key": "8df329ce-6b76-40e5-9897-da5aed18661a",
+            "Key": "8bcac3a4-2fac-40d2-938e-82abe46fbee5",
             "Value": {
-                "id": "fcd865f3-a351-4fa4-84a8-354c54f0c498",
-                "resourcePath": "objects\\obj_corazonVida1\\obj_corazonVida1.yy",
+                "id": "ec596345-237f-4e00-9f29-14a328801585",
+                "resourcePath": "objects\\obj_corazonVida\\obj_corazonVida.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -283,14 +259,6 @@
             "Value": {
                 "id": "e1f429cd-d3f3-4f01-a89e-b8419d5d45fa",
                 "resourcePath": "sprites\\spr_colision\\spr_colision.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "afe14c92-7702-470b-9e38-80f0ef134378",
-            "Value": {
-                "id": "c8a5fb70-4e30-42ad-ae3a-d6a0f1f302ea",
-                "resourcePath": "sprites\\spr_corazonGui1\\spr_corazonGui1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -434,7 +402,7 @@
             "Key": "f6f6424b-ef14-4244-a785-2589db413d0f",
             "Value": {
                 "id": "26e816ab-3c26-4839-a03f-7594615fce5c",
-                "resourcePath": "sprites\\spr_corazonGui2\\spr_corazonGui2.yy",
+                "resourcePath": "sprites\\spr_corazonGui\\spr_corazonGui.yy",
                 "resourceType": "GMSprite"
             }
         },

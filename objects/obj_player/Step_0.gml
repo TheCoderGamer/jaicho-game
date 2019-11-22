@@ -58,10 +58,10 @@ if moveY != 0{
 }
 
 
-//Pinchos
+//PINCHOS
 if timer1 < 1*1000000 + 5000 {timer1 += delta_time;} else{timer1 = 1000000;} //evitar variable con numeros muy grandes
 if timer1 > 1 * 1000000 && place_meeting(x,y,obj_spikes)
-	{
+	{ //cosas a ejecutar si tocas los pinchos
 	timer1 = 0; 
 	vida = vida-1;				
 	}
@@ -70,7 +70,7 @@ if timer1 > 1 * 1000000 && place_meeting(x,y,obj_spikes)
 if(hinput !=0 or vinput !=0)
 {x += moveX; y += moveY;}
 
-//.....................VIDA...................
+//.....................MUERTE...................
 if vida <= 0
 	{
 	room_goto(rm_death);
