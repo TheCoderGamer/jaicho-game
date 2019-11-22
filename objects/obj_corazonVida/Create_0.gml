@@ -1,10 +1,7 @@
-//depth = -1
 scale = 3;
-
 spr_corazon = spr_corazonGui;
-//gui_height = display_get_gui_height();
-//gui_width = display_get_gui_width();
 
+//PARTE DEL MAPA EN LA QUE SE DIBUJAN
 corazonDibujadoEnX1 = 10;
 corazonDibujadoEnY1 = 10;
 corazonDibujadoEnX2 = 55;
@@ -27,8 +24,6 @@ corazon_TL_X2 = corazon_2_TL_X; //2
 corazon_TL_Y2 = corazon_2_TL_Y;
 corazon_TL_X3 = corazon_2_TL_X; //3
 corazon_TL_Y3 = corazon_2_TL_Y;
-
-
 
 
 vida_UI_height = 12;
