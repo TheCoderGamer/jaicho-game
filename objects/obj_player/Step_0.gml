@@ -32,6 +32,9 @@ if(hinput !=0 or vinput !=0)
 	}
 else{image_index = 0;image_speed = 0;}
 
+if(hinput =0 && vinput =0)
+{image_index = 1}
+
 //COLISION
 if moveX != 0{
 	if place_meeting(x+moveX,y,obj_colision)

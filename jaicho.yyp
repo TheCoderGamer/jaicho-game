@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "26821bbf-7b93-4b10-b02e-a59744a74149",
+            "Value": {
+                "id": "27e317d0-d78f-4d2d-bb71-789c5f0b374a",
+                "resourcePath": "sprites\\spr_NPC_F84_down\\spr_NPC_F84_down.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2807a733-7710-4803-bc7e-fbbd5d40b17b",
             "Value": {
                 "id": "0392d511-b112-4be9-bd70-2d2af25c1a2a",
@@ -127,11 +135,51 @@
             }
         },
         {
+            "Key": "30e25b56-6ba0-4e49-8b4f-8f7075e84ad5",
+            "Value": {
+                "id": "9fe26179-947e-47ec-b245-8411679d66a5",
+                "resourcePath": "sprites\\spr_player_downIdle\\spr_player_downIdle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "32b7e8ce-2c27-4918-bd73-ee2c39c77ff2",
+            "Value": {
+                "id": "fa872429-4e9f-4bb4-9d36-b269f9b8187c",
+                "resourcePath": "views\\32b7e8ce-2c27-4918-bd73-ee2c39c77ff2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "32ee5995-4c71-40d2-bf7d-068e026a86e4",
+            "Value": {
+                "id": "1afaffdd-d529-4d8f-927f-ddd7cca8e0ab",
+                "resourcePath": "sprites\\spr_NPC_F84_left\\spr_NPC_F84_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3569c08c-c15d-493d-b2fa-4a5c4132a792",
             "Value": {
                 "id": "f881aa54-c31b-4b7e-8b92-d8a8485d99bc",
                 "resourcePath": "objects\\obj_spikes\\obj_spikes.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "39bca15f-70e7-4427-b40f-41c6ae5a4dbc",
+            "Value": {
+                "id": "933ada92-181b-4c08-b8c6-611e79a80109",
+                "resourcePath": "objects\\obj_NPC_test2\\obj_NPC_test2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3e2bd212-14d3-4bea-b524-204c153fc6e4",
+            "Value": {
+                "id": "ffa02231-ab82-411b-844c-ee068b51a5f6",
+                "resourcePath": "sprites\\spr_NPC_F84_up\\spr_NPC_F84_up.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -179,6 +227,14 @@
             "Value": {
                 "id": "1af30fe2-b2ed-49c6-8bd5-3b1169a5984a",
                 "resourcePath": "views\\6ae08175-a217-475c-b2eb-03f53f0ff68a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "740c1c73-e53b-492a-ac4b-829c6858131a",
+            "Value": {
+                "id": "9aba8c81-6bfd-4ee4-b198-c4fb79ab6b78",
+                "resourcePath": "views\\740c1c73-e53b-492a-ac4b-829c6858131a.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -239,6 +295,14 @@
             }
         },
         {
+            "Key": "9b896e18-0e13-408b-9027-6e35b8e4c024",
+            "Value": {
+                "id": "2813469f-d94f-4d96-a54e-f14c37f9a4b5",
+                "resourcePath": "objects\\obj_NPC_test1\\obj_NPC_test1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9e31f82e-d7d0-40e8-a1b4-195d2853b031",
             "Value": {
                 "id": "2b9ad3b7-a41d-4de3-a6dc-a513324ff1f3",
@@ -283,6 +347,14 @@
             "Value": {
                 "id": "ffc1a210-8eb3-4d01-b4bb-a481f282de66",
                 "resourcePath": "views\\c92551fa-d2b3-4a09-abe7-935c7d4e1c1d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "cb101566-b59f-4562-ad62-560b502ffcf1",
+            "Value": {
+                "id": "66480d41-aa47-4e19-9215-4651b56ff7fb",
+                "resourcePath": "views\\cb101566-b59f-4562-ad62-560b502ffcf1.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -363,6 +435,14 @@
             "Value": {
                 "id": "e542f435-22b7-4bac-9ea8-20adcb46cc5e",
                 "resourcePath": "sprites\\spr_tituloJuego\\spr_tituloJuego.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ebeda1df-08b2-4749-ae50-368eb9adb0bd",
+            "Value": {
+                "id": "e1819e69-821a-4c5f-985e-02645c438d39",
+                "resourcePath": "sprites\\spr_NPC_F84_right\\spr_NPC_F84_right.yy",
                 "resourceType": "GMSprite"
             }
         },

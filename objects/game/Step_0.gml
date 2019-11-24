@@ -17,3 +17,9 @@ if keyboard_check(vk_f4)
 			}
 		}
    }
+
+
+if keyboard_check(ord("P"))
+	{
+	game_restart()
+	}

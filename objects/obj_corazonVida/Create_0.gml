@@ -2,11 +2,11 @@ scale = 3;
 spr_corazon = spr_corazonGui;
 
 //PARTE DEL MAPA EN LA QUE SE DIBUJAN
-corazonDibujadoEnX1 = 10;
+corazonDibujadoEnX1 = 10;  //1
 corazonDibujadoEnY1 = 10;
-corazonDibujadoEnX2 = 55;
+corazonDibujadoEnX2 = 55;  //2
 corazonDibujadoEnY2 = 10;
-corazonDibujadoEnX3 = 100;
+corazonDibujadoEnX3 = 100; //3
 corazonDibujadoEnY3 = 10;
 
 //POSICIONES SPRITE CORAZON
