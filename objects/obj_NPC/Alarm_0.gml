@@ -13,6 +13,4 @@ if (idle == false)
 			case 4: moveY =  spd; sprite_index = spr_NPC_down; break;
 			}
 	}
-
-
 alarm[0] = random_range(1,3) * room_speed //reiniciar cada 2.5-5 segs

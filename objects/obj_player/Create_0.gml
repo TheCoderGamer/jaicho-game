@@ -8,6 +8,7 @@ moveY = 0;
 globalvar vida;
 vida = 5;
 timer1 = 1000000
+timer1b = 1000000
 
 // Iniciar sprite
 image_speed = .6;

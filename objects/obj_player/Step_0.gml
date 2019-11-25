@@ -69,6 +69,13 @@ if timer1 > 1 * 1000000 && place_meeting(x,y,obj_spikes)
 	vida = vida-1;				
 	}
 
+if timer1b < 1*1000000 + 5000 {timer1b += delta_time;} else{timer1b = 1000000;} //evitar variable con numeros muy grandes
+if timer1b > 1 * 1000000 && place_meeting(x,y,obj_colision)
+	{ //cosas a ejecutar si estas en una colision
+	timer1b = 0; 
+	vida = vida-1;				
+	}
+
 //REALIZAR MOVIMIENTO
 if(hinput !=0 or vinput !=0)
 {x += moveX; y += moveY;}
