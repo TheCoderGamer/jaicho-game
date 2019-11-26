@@ -162,6 +162,14 @@ if keyboard_check(vk_shift)
 	}
 }
 
+//TRANSICIONES
+var inst = instance_place(x,y,obj_transition)
+if inst != noone{
+		with(game){
+			spawnRoom = inst.roomgoto
+			roomTransition = true
+		}	
+	}
 
 
 

@@ -3,6 +3,7 @@
 //VARIABLES
 walk_spd = 1;
 run_spd = 2;
+dir = 0
 moveX = 0;
 moveY = 0;
 globalvar vida;

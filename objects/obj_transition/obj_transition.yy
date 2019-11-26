@@ -1,34 +1,24 @@
 {
-    "id": "2a4a739d-367d-4727-85de-eec679686845",
+    "id": "ea43d571-7ba4-4b36-bd69-662e249edf44",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "camera",
+    "name": "obj_transition",
     "eventList": [
         {
-            "id": "d998b85f-016f-40e2-911b-fd5662d01416",
+            "id": "5cf3479b-9149-45ec-9eff-265142094bc2",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "2a4a739d-367d-4727-85de-eec679686845"
-        },
-        {
-            "id": "7db5305a-d579-4fed-9aab-4262854b43ed",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "2a4a739d-367d-4727-85de-eec679686845"
+            "m_owner": "ea43d571-7ba4-4b36-bd69-662e249edf44"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": true,
+    "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -43,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "d742ecc2-eec7-4328-b9ce-941fe47dccaa",
     "visible": true
 }

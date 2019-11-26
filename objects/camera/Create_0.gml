@@ -1,5 +1,5 @@
 /// @description Variables
 //VARIABLES
 siguiendo = obj_player;
-hborder = 60;
+hborder = 30;
 vborder = 30;

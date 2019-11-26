@@ -1,0 +1,1 @@
+roomgoto = room0
