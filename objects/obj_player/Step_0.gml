@@ -76,6 +76,95 @@ if timer1b > 1 * 1000000 && place_meeting(x,y,obj_colision)
 	vida = vida-1;				
 	}
 
+
+//........DASH........
+if timer1c < 1*1000000 + 5000 {timer1c += delta_time;} else{timer1c = 1000000;}
+if keyboard_check(vk_shift)
+{
+	if dir == 0 && timer1c > 1 * 1000000{ //Dash derecha
+		repeat dashPixel{
+			if !place_meeting(x+sigXdash,y,obj_colision)
+				{doDashcounter = doDashcounter + 1; sigXdash = sigXdash + 1}
+			else {sigXdash = 1; timer1c = 1000000; doDashcounter = 0; break;}
+		}
+		if doDashcounter = dashPixel
+		{timer1c = 0; x = x + dashPixel; sigXdash = 1; doDashcounter = 0}		
+	}
+	
+	if dir == 180 && timer1c > 1 * 1000000{ //Dash izquierda
+		repeat dashPixel{
+			if !place_meeting(x-sigXdash,y,obj_colision)
+				{doDashcounter = doDashcounter + 1; sigXdash = sigXdash + 1}
+			else {sigXdash = 1; timer1c = 1000000; doDashcounter = 0; break;}
+		}
+		if doDashcounter = dashPixel
+		{timer1c = 0; x = x - dashPixel; sigXdash = 1; doDashcounter = 0}		
+	}
+	
+	if dir == 270 && timer1c > 1 * 1000000{ //Dash abajo
+		repeat dashPixel{
+			if !place_meeting(x,y + sigYdash,obj_colision)
+				{doDashcounter = doDashcounter + 1; sigYdash = sigYdash + 1}
+			else {sigYdash = 1; timer1c = 1000000; doDashcounter = 0; break;}
+		}
+		if doDashcounter = dashPixel
+		{timer1c = 0; y = y + dashPixel; sigYdash = 1; doDashcounter = 0}		
+	}
+	
+	if dir == 90 && timer1c > 1 * 1000000{ //Dash arriba
+		repeat dashPixel{
+			if !place_meeting(x,y - sigYdash,obj_colision)
+				{doDashcounter = doDashcounter + 1; sigYdash = sigYdash + 1}
+			else {sigYdash = 1; timer1c = 1000000; doDashcounter = 0; break;}
+		}
+		if doDashcounter = dashPixel
+		{timer1c = 0; y = y - dashPixel; sigYdash = 1; doDashcounter = 0}		
+	}	
+	
+	if dir == 45 && timer1c > 1 * 1000000{ //Dash derecha arriba
+		repeat dashPixel{
+			if !place_meeting(x+(sigXdash/2),y-(sigYdash/2),obj_colision)
+				{doDashcounter = doDashcounter + 1; sigXdash = sigXdash + 1; sigYdash = sigYdash +1}
+			else {sigXdash = 1; sigYdash = 1; timer1c = 1000000; doDashcounter = 0; break;}
+		}
+		if doDashcounter = dashPixel
+		{timer1c = 0; x = x + (dashPixel/2); y = y - (dashPixel/2); sigXdash = 1; doDashcounter = 0}		
+	}
+		
+	if dir == 135 && timer1c > 1 * 1000000{ //Dash arriba izquierda
+		repeat dashPixel{
+			if !place_meeting(x-(sigXdash/2),y-(sigYdash/2),obj_colision)
+				{doDashcounter = doDashcounter + 1; sigXdash = sigXdash + 1; sigYdash = sigYdash +1}
+			else {sigXdash = 1; sigYdash = 1; timer1c = 1000000; doDashcounter = 0; break;}
+		}
+		if doDashcounter = dashPixel
+		{timer1c = 0; x = x - (dashPixel/2); y = y - (dashPixel/2); sigXdash = 1; doDashcounter = 0}		
+	}	
+	
+	if dir == 225 && timer1c > 1 * 1000000{ //Dash izquierda abajo
+		repeat dashPixel{
+			if !place_meeting(x-(sigXdash/2),y+(sigYdash/2),obj_colision)
+				{doDashcounter = doDashcounter + 1; sigXdash = sigXdash + 1; sigYdash = sigYdash +1}
+			else {sigXdash = 1; sigYdash = 1; timer1c = 1000000; doDashcounter = 0; break;}
+		}
+		if doDashcounter = dashPixel
+		{timer1c = 0; x = x - (dashPixel/2); y = y + (dashPixel/2); sigXdash = 1; doDashcounter = 0}		
+	}
+		
+	if dir == 315 && timer1c > 1 * 1000000{ //Dash abajo derecha
+		repeat dashPixel{
+			if !place_meeting(x+(sigXdash/2),y+(sigYdash/2),obj_colision)
+				{doDashcounter = doDashcounter + 1; sigXdash = sigXdash + 1; sigYdash = sigYdash +1}
+			else {sigXdash = 1; sigYdash = 1; timer1c = 1000000; doDashcounter = 0; break;}
+		}
+		if doDashcounter = dashPixel
+		{timer1c = 0; x = x + (dashPixel/2); y = y + (dashPixel/2); sigXdash = 1; doDashcounter = 0}		
+	}
+}
+
+
+
+
 //REALIZAR MOVIMIENTO
 if(hinput !=0 or vinput !=0)
 {x += moveX; y += moveY;}

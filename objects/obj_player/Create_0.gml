@@ -9,6 +9,11 @@ globalvar vida;
 vida = 5;
 timer1 = 1000000
 timer1b = 1000000
+timer1c = 1000000
+dashPixel = 30
+sigXdash = 1
+sigYdash = 1
+doDashcounter = 0
 
 // Iniciar sprite
 image_speed = .6;
