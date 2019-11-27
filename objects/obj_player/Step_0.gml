@@ -18,12 +18,22 @@ if(hinput !=0 or vinput !=0)
 		moveY = lengthdir_y(spd, dir) //vertical
 		
 	//SPRITES
+	if dir = 45 {facing = 45}
+	else if dir = 135 {facing = 135}
+	else if dir = 225 {facing = 225}
+	else if dir = 315 {facing = 315}
+	
+	
 	switch(facing)
 		{
 		case 0: sprite_index = spr_player_right; break;  //derecha
 		case 90: sprite_index = spr_player_up; break;    //arriba
 		case 180: sprite_index = spr_player_left; break; //izquierda
 		case 270: sprite_index = spr_player_down; break; //abajo
+		case 45: sprite_index = spr_player_up; break;    //derecha arriba
+		case 135: sprite_index = spr_player_up; break;   //arriba izquierda
+		case 225: sprite_index = spr_player_down; break; //izquierda abajo
+		case 315: sprite_index = spr_player_down; break; //abajo derecha
 		}
 //	switch (dir)
 //		{
