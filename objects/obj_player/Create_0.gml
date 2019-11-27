@@ -15,6 +15,7 @@ dashPixel = 30
 sigXdash = 1
 sigYdash = 1
 doDashcounter = 0
+facing = 0
 
 // Iniciar sprite
 image_speed = .6;

@@ -18,22 +18,42 @@ if(hinput !=0 or vinput !=0)
 		moveY = lengthdir_y(spd, dir) //vertical
 		
 	//SPRITES
-	switch(dir)
+	switch(facing)
 		{
 		case 0: sprite_index = spr_player_right; break;  //derecha
 		case 90: sprite_index = spr_player_up; break;    //arriba
 		case 180: sprite_index = spr_player_left; break; //izquierda
 		case 270: sprite_index = spr_player_down; break; //abajo
-		case 45: sprite_index = spr_player_up; break;    //derecha arriba
-		case 135: sprite_index = spr_player_up; break;   //arriba izquierda
-		case 225: sprite_index = spr_player_down; break; //izquierda abajo
-		case 315: sprite_index = spr_player_down; break; //abajo derecha
 		}
+//	switch (dir)
+//		{
+//		case 45: sprite_index = spr_player_up; break;    //derecha arriba
+//		case 135: sprite_index = spr_player_up; break;   //arriba izquierda
+//		case 225: sprite_index = spr_player_down; break; //izquierda abajo
+//		case 315: sprite_index = spr_player_down; break; //abajo derecha
+//		}
 	}
 else{image_index = 0;image_speed = 0;}
 
 if(hinput =0 && vinput =0)
 {image_index = 1}
+
+//Facing
+if moveX != 0 {
+	switch sign(moveX) {
+		case 1: facing = dir.right; break;
+		case -1: facing = dir.left; break;
+	}
+}
+
+else if moveY != 0 {
+	switch sign(moveY) {
+		case 1: facing = dir.down; break;
+		case -1: facing = dir.up; break;
+	}
+}
+
+else {facing = -1}
 
 //COLISION
 if moveX != 0{
@@ -164,10 +184,15 @@ if keyboard_check(vk_shift)
 
 //TRANSICIONES
 var inst = instance_place(x,y,obj_transition)
-if inst != noone{
+if inst != noone && facing == inst.playerFacingBefore{
 		with(game){
-			spawnRoom = inst.roomgoto
-			roomTransition = true
+			if roomTransition = false {
+				spawnRoom = inst.roomgoto
+				roomTransition = true
+				spawnX = inst.spawnX
+				spawnY = inst.spawnY
+				spawnPlayerFacing = inst.playerFacingAfter
+			}		
 		}	
 	}
 
