@@ -23,7 +23,7 @@ if(hinput !=0 or vinput !=0)
 	else if dir = 225 {facing = 225}
 	else if dir = 315 {facing = 315}
 	
-	
+
 	switch(facing)
 		{
 		case 0: sprite_index = spr_player_right; break;  //derecha
@@ -35,13 +35,6 @@ if(hinput !=0 or vinput !=0)
 		case 225: sprite_index = spr_player_down; break; //izquierda abajo
 		case 315: sprite_index = spr_player_down; break; //abajo derecha
 		}
-//	switch (dir)
-//		{
-//		case 45: sprite_index = spr_player_up; break;    //derecha arriba
-//		case 135: sprite_index = spr_player_up; break;   //arriba izquierda
-//		case 225: sprite_index = spr_player_down; break; //izquierda abajo
-//		case 315: sprite_index = spr_player_down; break; //abajo derecha
-//		}
 	}
 else{image_index = 0;image_speed = 0;}
 

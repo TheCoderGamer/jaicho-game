@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "26a2707d-5531-47ef-957a-18ebf61feedd",
+            "Value": {
+                "id": "c86ce37e-d550-467d-ab57-216cc9d1563b",
+                "resourcePath": "sprites\\spr_spikes\\spr_spikes.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2807a733-7710-4803-bc7e-fbbd5d40b17b",
             "Value": {
                 "id": "0392d511-b112-4be9-bd70-2d2af25c1a2a",

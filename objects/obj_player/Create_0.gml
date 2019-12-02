@@ -7,7 +7,7 @@ dir = 0
 moveX = 0;
 moveY = 0;
 globalvar vida;
-vida = 5;
+vida = 50;
 timer1 = 1000000
 timer1b = 1000000
 timer1c = 1000000
