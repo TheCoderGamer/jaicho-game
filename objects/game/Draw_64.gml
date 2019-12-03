@@ -1,3 +1,4 @@
+//EFCTO TRANSICIONES
 if roomTransition {
 	if room != spawnRoom{
 			blackAlpha += 0.1

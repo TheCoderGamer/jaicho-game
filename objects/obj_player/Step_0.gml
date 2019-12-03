@@ -23,6 +23,11 @@ if(hinput !=0 or vinput !=0)
 	else if dir = 225 {facing = 225}
 	else if dir = 315 {facing = 315}
 	
+	else if dir = 0 {facing = 0}
+	else if dir = 90 {facing = 90}
+	else if dir = 180 {facing = 180}
+	else if dir = 270 {facing = 270}
+	
 
 	switch(facing)
 		{
@@ -36,7 +41,7 @@ if(hinput !=0 or vinput !=0)
 		case 315: sprite_index = spr_player_down; break; //abajo derecha
 		}
 	}
-else{image_index = 0;image_speed = 0;}
+else if (hinput == 0 && vinput == 0) {image_index = 0;image_speed = 0;}
 
 if(hinput =0 && vinput =0)
 {image_index = 1}
@@ -78,10 +83,10 @@ if moveY != 0{
 				if !place_meeting(x,y+sign(moveY),obj_colision)  //vertical
 				{y += sign(moveY);}
 				else {break;}
-			}		
+			}
 			moveY = 0
 		}
-}
+	}
 
 
 //PINCHOS
@@ -104,86 +109,107 @@ if timer1b > 1 * 1000000 && place_meeting(x,y,obj_colision)
 if timer1c < 1*1000000 + 5000 {timer1c += delta_time;} else{timer1c = 1000000;}
 if keyboard_check(vk_shift)
 {
-	if dir == 0 && timer1c > 1 * 1000000{ //Dash derecha
-		repeat dashPixel{
-			if !place_meeting(x+sigXdash,y,obj_colision)
-				{doDashcounter = doDashcounter + 1; sigXdash = sigXdash + 1}
-			else {sigXdash = 1; timer1c = 1000000; doDashcounter = 0; break;}
+	if dir == 0 && timer1c > 1000000{ //Derecha +=
+		repeat (dashPixel+1){
+			if (!place_meeting(x+sigXdash, y, obj_colision)){
+				sigXdash = sigXdash + 1
+			}
+			else if (place_meeting(x+sigXdash, y, obj_colision)){
+				x = x + (sigXdash-1);
+				y = y;
+				moveX = 0
+				moveY = 0
+				sigXdash = 1;
+				sigYdash = 1
+				timer1c = 0;
+				break;
+			}
+		if sigXdash-1 = dashPixel{
+				x = x + sigXdash
+				y = y
+				sigXdash = 1
+				sigYdash = 1
+				timer1c = 0
+			}
 		}
-		if doDashcounter = dashPixel
-		{timer1c = 0; x = x + dashPixel; sigXdash = 1; doDashcounter = 0}		
 	}
 	
-	if dir == 180 && timer1c > 1 * 1000000{ //Dash izquierda
-		repeat dashPixel{
-			if !place_meeting(x-sigXdash,y,obj_colision)
-				{doDashcounter = doDashcounter + 1; sigXdash = sigXdash + 1}
-			else {sigXdash = 1; timer1c = 1000000; doDashcounter = 0; break;}
+	if dir == 180 && timer1c > 1000000{ //Derecha +=
+		repeat (dashPixel+1){
+			if (!place_meeting(x-sigXdash, y, obj_colision)){
+				sigXdash = sigXdash + 1
+			}
+			if (place_meeting(x-sigXdash, y, obj_colision)){
+				x = x - (sigXdash-1);
+				y = y;
+				moveX = 0
+				moveY = 0
+				sigXdash = 1;
+				sigYdash = 1
+				timer1c = 0;
+				break;
+			}
+		if sigXdash-1 = dashPixel{
+				x = x - sigXdash
+				y = y
+				sigXdash = 1
+				sigYdash = 1
+				timer1c = 0
+			}
 		}
-		if doDashcounter = dashPixel
-		{timer1c = 0; x = x - dashPixel; sigXdash = 1; doDashcounter = 0}		
 	}
 	
-	if dir == 270 && timer1c > 1 * 1000000{ //Dash abajo
-		repeat dashPixel{
-			if !place_meeting(x,y + sigYdash,obj_colision)
-				{doDashcounter = doDashcounter + 1; sigYdash = sigYdash + 1}
-			else {sigYdash = 1; timer1c = 1000000; doDashcounter = 0; break;}
+	if dir == 270 && timer1c > 1000000{ //Derecha +=
+		repeat (dashPixel+1){
+			if (!place_meeting(x, y+sigYdash, obj_colision)){
+				sigYdash = sigYdash + 1
+			}
+			if (place_meeting(x, y+sigYdash, obj_colision)){
+				x = x;
+				y = y + (sigYdash-1);
+				moveX = 0
+				moveY = 0
+				sigXdash = 1
+				sigYdash = 1;
+				timer1c = 0;
+				break;
+			}
+		if sigYdash-1 = dashPixel{
+				x = x 
+				y = y + sigYdash
+				sigXdash = 1
+				sigYdash = 1
+				timer1c = 0
+			}
 		}
-		if doDashcounter = dashPixel
-		{timer1c = 0; y = y + dashPixel; sigYdash = 1; doDashcounter = 0}		
 	}
 	
-	if dir == 90 && timer1c > 1 * 1000000{ //Dash arriba
-		repeat dashPixel{
-			if !place_meeting(x,y - sigYdash,obj_colision)
-				{doDashcounter = doDashcounter + 1; sigYdash = sigYdash + 1}
-			else {sigYdash = 1; timer1c = 1000000; doDashcounter = 0; break;}
+	if dir == 90 && timer1c > 1000000{ //Derecha +=
+		repeat (dashPixel+1){
+			if (!place_meeting(x, y-sigYdash, obj_colision)){
+				sigYdash = sigYdash + 1
+			}
+			if (place_meeting(x, y-sigYdash, obj_colision)){
+				x = x;
+				y = y - (sigYdash-1);
+				moveX = 0
+				moveY = 0
+				sigYdash = 1;
+				sigXdash = 1
+				timer1c = 0;
+				break;
+			}
+		if sigYdash-1 = dashPixel{
+				x = x 
+				y = y - sigYdash
+				sigXdash = 1
+				sigYdash = 1
+				timer1c = 0
+			}
 		}
-		if doDashcounter = dashPixel
-		{timer1c = 0; y = y - dashPixel; sigYdash = 1; doDashcounter = 0}		
-	}	
-	
-	if dir == 45 && timer1c > 1 * 1000000{ //Dash derecha arriba
-		repeat dashPixel{
-			if !place_meeting(x+(sigXdash/2),y-(sigYdash/2),obj_colision)
-				{doDashcounter = doDashcounter + 1; sigXdash = sigXdash + 1; sigYdash = sigYdash +1}
-			else {sigXdash = 1; sigYdash = 1; timer1c = 1000000; doDashcounter = 0; break;}
-		}
-		if doDashcounter = dashPixel
-		{timer1c = 0; x = x + (dashPixel/2); y = y - (dashPixel/2); sigXdash = 1; doDashcounter = 0}		
-	}
-		
-	if dir == 135 && timer1c > 1 * 1000000{ //Dash arriba izquierda
-		repeat dashPixel{
-			if !place_meeting(x-(sigXdash/2),y-(sigYdash/2),obj_colision)
-				{doDashcounter = doDashcounter + 1; sigXdash = sigXdash + 1; sigYdash = sigYdash +1}
-			else {sigXdash = 1; sigYdash = 1; timer1c = 1000000; doDashcounter = 0; break;}
-		}
-		if doDashcounter = dashPixel
-		{timer1c = 0; x = x - (dashPixel/2); y = y - (dashPixel/2); sigXdash = 1; doDashcounter = 0}		
-	}	
-	
-	if dir == 225 && timer1c > 1 * 1000000{ //Dash izquierda abajo
-		repeat dashPixel{
-			if !place_meeting(x-(sigXdash/2),y+(sigYdash/2),obj_colision)
-				{doDashcounter = doDashcounter + 1; sigXdash = sigXdash + 1; sigYdash = sigYdash +1}
-			else {sigXdash = 1; sigYdash = 1; timer1c = 1000000; doDashcounter = 0; break;}
-		}
-		if doDashcounter = dashPixel
-		{timer1c = 0; x = x - (dashPixel/2); y = y + (dashPixel/2); sigXdash = 1; doDashcounter = 0}		
-	}
-		
-	if dir == 315 && timer1c > 1 * 1000000{ //Dash abajo derecha
-		repeat dashPixel{
-			if !place_meeting(x+(sigXdash/2),y+(sigYdash/2),obj_colision)
-				{doDashcounter = doDashcounter + 1; sigXdash = sigXdash + 1; sigYdash = sigYdash +1}
-			else {sigXdash = 1; sigYdash = 1; timer1c = 1000000; doDashcounter = 0; break;}
-		}
-		if doDashcounter = dashPixel
-		{timer1c = 0; x = x + (dashPixel/2); y = y + (dashPixel/2); sigXdash = 1; doDashcounter = 0}		
 	}
 }
+	
 
 //TRANSICIONES
 var inst = instance_place(x,y,obj_transition)

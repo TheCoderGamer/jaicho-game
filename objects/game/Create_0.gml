@@ -2,6 +2,7 @@
 //randomize();
 // VARIABLES
 tempo1segs = 1000000;
+debugMode = false
 
 roomTransition = false
 blackAlpha = 0
