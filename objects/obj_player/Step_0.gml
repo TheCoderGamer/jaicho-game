@@ -134,7 +134,7 @@ if keyboard_check(vk_shift)
 		}
 	}
 	
-	if dir == 180 && timer1c > 1000000{ //Derecha +=
+	if dir == 180 && timer1c > 1000000{ //Izquierda -=
 		repeat (dashPixel+1){
 			if (!place_meeting(x-sigXdash, y, obj_colision)){
 				sigXdash = sigXdash + 1
