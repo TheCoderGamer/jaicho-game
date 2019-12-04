@@ -130,7 +130,7 @@
             "Key": "2b9fc175-d2b2-4c3c-8845-3704ea03bb69",
             "Value": {
                 "id": "cae42c67-55e3-4ff6-b27e-8304e6bb9e5f",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\rm_main\\rm_main.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -164,6 +164,14 @@
                 "id": "1afaffdd-d529-4d8f-927f-ddd7cca8e0ab",
                 "resourcePath": "sprites\\spr_NPC_F84_left\\spr_NPC_F84_left.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "35582d2f-904c-48f7-b47e-a5f9a490d151",
+            "Value": {
+                "id": "ab70430a-d5b1-43b1-9efc-714580273d0d",
+                "resourcePath": "objects\\obj_moneda\\obj_moneda.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -252,14 +260,6 @@
                 "id": "308a3694-7b1d-4b36-97cd-2511f4d1d49d",
                 "resourcePath": "sprites\\spr_player_left\\spr_player_left.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "796b4761-64f4-4430-a42c-4a7fefafb79c",
-            "Value": {
-                "id": "321a47db-4084-4760-aaea-c6d0414128d2",
-                "resourcePath": "objects\\obj_tituloJuego\\obj_tituloJuego.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -372,6 +372,14 @@
                 "id": "66480d41-aa47-4e19-9215-4651b56ff7fb",
                 "resourcePath": "views\\cb101566-b59f-4562-ad62-560b502ffcf1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "cc12f730-b698-4ac1-b545-80753a0db992",
+            "Value": {
+                "id": "64b31cee-dd9b-4fbd-862b-7982cb714566",
+                "resourcePath": "sprites\\sprite18\\sprite18.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -1,4 +1,4 @@
-roomgoto = room0
+roomgoto = rm_main
 spawnX = 1807
 spawnY = 115
 

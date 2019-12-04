@@ -2,7 +2,12 @@
 //randomize();
 // VARIABLES
 tempo1segs = 1000000;
+tempo4segs = 0
+firstSetUpDone = false
 debugMode = false
+
+globalvar vida;
+vida = 50;					//cantidad de medios corazones
 
 roomTransition = false
 blackAlpha = 0
@@ -19,3 +24,17 @@ enum dir{
 	left = 180,
 	down = 270
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

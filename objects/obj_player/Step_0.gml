@@ -115,8 +115,9 @@ if keyboard_check(vk_shift)
 				sigXdash = sigXdash + 1
 			}
 			else if (place_meeting(x+sigXdash, y, obj_colision)){
-				x = x + (sigXdash-1);
+				x = x + (sigXdash-2);
 				y = y;
+				//animacion dir0
 				moveX = 0
 				moveY = 0
 				sigXdash = 1;
@@ -127,6 +128,7 @@ if keyboard_check(vk_shift)
 		if sigXdash-1 = dashPixel{
 				x = x + sigXdash
 				y = y
+				//animacion
 				sigXdash = 1
 				sigYdash = 1
 				timer1c = 0
@@ -140,7 +142,7 @@ if keyboard_check(vk_shift)
 				sigXdash = sigXdash + 1
 			}
 			if (place_meeting(x-sigXdash, y, obj_colision)){
-				x = x - (sigXdash-1);
+				x = x - (sigXdash-2);
 				y = y;
 				moveX = 0
 				moveY = 0
@@ -166,7 +168,7 @@ if keyboard_check(vk_shift)
 			}
 			if (place_meeting(x, y+sigYdash, obj_colision)){
 				x = x;
-				y = y + (sigYdash-1);
+				y = y + (sigYdash-2);
 				moveX = 0
 				moveY = 0
 				sigXdash = 1
@@ -191,7 +193,7 @@ if keyboard_check(vk_shift)
 			}
 			if (place_meeting(x, y-sigYdash, obj_colision)){
 				x = x;
-				y = y - (sigYdash-1);
+				y = y - (sigYdash-2);
 				moveX = 0
 				moveY = 0
 				sigYdash = 1;
@@ -223,13 +225,16 @@ if inst != noone && facing == inst.playerFacingBefore{
 				spawnPlayerFacing = inst.playerFacingAfter
 			}		
 		}	
-	}
+}
 
 
 
 //REALIZAR MOVIMIENTO
 if(hinput !=0 or vinput !=0)
 {x += moveX; y += moveY;}
+
+
+
 
 //.....................MUERTE...................
 if vida <= 0
