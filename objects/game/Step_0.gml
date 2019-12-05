@@ -13,11 +13,13 @@ if keyboard_check(ord("P")) {game_restart();}
 
 
 if firstSetUpDone = false {
-	if tempo4segs < 4000000 + 5000 {tempo4segs += delta_time;} else{tempo4segs = 4000000;} //evitar overflow
-	if tempo4segs >= 4000000 {
+	if tempo4segs < 2000000 + 5000 {tempo4segs += delta_time;} else{tempo4segs = 2000000;} //evitar overflow
+	if tempo4segs >= 2000000 {
 		room_goto_next()
 		firstSetUpDone = true
 	}
 }
 
+
+strMonedas = string(monedas)
 

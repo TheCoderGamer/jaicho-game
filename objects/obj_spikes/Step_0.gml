@@ -11,7 +11,8 @@ if place_meeting(x,y,obj_player) {
 else if (outOfSpikes == false){
 	image_index = 2
 	if timer2 < 4000000 + 5000 {timer2 += delta_time;} else{timer2 = 4000000;} //evitar overflow
-	if timer2 > 10000 {image_index = 1}
+	if timer2 > 10000 {image_index = 2}
+	if timer2 > 15000 {image_index = 1}
 	if timer2 > 200000 {image_index = 0}
 	if timer2 > 400000 {timer2 = 0; outOfSpikes = true}
 }

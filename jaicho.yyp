@@ -378,7 +378,7 @@
             "Key": "cc12f730-b698-4ac1-b545-80753a0db992",
             "Value": {
                 "id": "64b31cee-dd9b-4fbd-862b-7982cb714566",
-                "resourcePath": "sprites\\sprite18\\sprite18.yy",
+                "resourcePath": "sprites\\spr_moneda\\spr_moneda.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -428,6 +428,14 @@
                 "id": "ba6ef359-34d5-49f7-98d2-e631367c3788",
                 "resourcePath": "views\\dba6934a-1434-4c0d-80c1-4c83ecdb95c9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dba758b0-3099-47c2-a4a5-29b58516a179",
+            "Value": {
+                "id": "c45a16ac-35a9-4f20-854e-c495fd139c9e",
+                "resourcePath": "sounds\\sn_pickupCoin\\sn_pickupCoin.yy",
+                "resourceType": "GMSound"
             }
         },
         {

@@ -4,6 +4,8 @@ obj_player.x = spawnX
 obj_player.y = spawnY
 obj_player.facing = spawnPlayerFacing
 
+camera_set_view_pos(viewCamID, cameraSpawnX, cameraSpawnY)
+
 with obj_player {
 		switch(facing) //sprites al salir
 		{

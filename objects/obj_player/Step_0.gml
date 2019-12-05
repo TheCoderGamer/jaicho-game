@@ -214,17 +214,19 @@ if keyboard_check(vk_shift)
 	
 
 //TRANSICIONES
-var inst = instance_place(x,y,obj_transition)
+var inst = instance_place(x,y,obj_transition) //Llamar inst a el obj_transicion con el que se colisiona
 if inst != noone && facing == inst.playerFacingBefore{
-		with(game){
+		with(game){ //Pasar variables a Game
 			if roomTransition = false {
 				spawnRoom = inst.roomgoto
 				roomTransition = true
 				spawnX = inst.spawnX
 				spawnY = inst.spawnY
 				spawnPlayerFacing = inst.playerFacingAfter
+				cameraSpawnX = inst.cameraSpawnX
+				cameraSpawnY = inst.cameraSpawnY
 			}		
-		}	
+		}
 }
 
 

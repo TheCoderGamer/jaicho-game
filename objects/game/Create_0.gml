@@ -8,12 +8,17 @@ debugMode = false
 
 globalvar vida;
 vida = 50;					//cantidad de medios corazones
+globalvar monedas;			
+monedas = 0					//cantidad de monedas
+strMonedas = 0
 
 roomTransition = false
 blackAlpha = 0
 spawnRoom = -1
 spawnX = 0
 spawnY = 0
+cameraSpawnX = 0
+cameraSpawnY = 0
 
 GUIwidth = display_get_width()
 GUIheight = display_get_height()
