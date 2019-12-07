@@ -25,8 +25,8 @@ if moveY != 0{
 	
 
 if(moveX = 0 && moveY = 0)
-{image_index = 1; image_speed = 0;}
-else {image_speed = 0.5}
+{/*moviendose = false*/image_index = 1; image_speed = 0}
+else {/*moviendose = true*/image_speed = 0.6}
 
 //REALIZAR MOVIMIENTO
 x += moveX; 

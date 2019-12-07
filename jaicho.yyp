@@ -247,10 +247,18 @@
             }
         },
         {
+            "Key": "4febc293-24d9-494a-ab3f-54de61aa90a8",
+            "Value": {
+                "id": "a65172d4-2394-42ac-a045-c98c0b99d9e9",
+                "resourcePath": "sprites\\spr_NPC_F84\\spr_NPC_F84.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5eb542df-5cea-461f-9147-280255516fe2",
             "Value": {
                 "id": "9db769f5-8aaf-48a9-940e-a2f42a1fc231",
-                "resourcePath": "sprites\\sp_key_Z\\sp_key_Z.yy",
+                "resourcePath": "sprites\\spr_key_Z\\spr_key_Z.yy",
                 "resourceType": "GMSprite"
             }
         },

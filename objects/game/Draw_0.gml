@@ -18,6 +18,8 @@ if debugMode == true
 		{draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_aqua, c_aqua, c_aqua, c_aqua, true)}
 	with obj_moneda
 		{draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_yellow, c_yellow, c_yellow, c_yellow, true)}
+	with obj_cofre1
+		{draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_yellow, c_yellow, c_yellow, c_yellow, true)}
 }	
 	
 	

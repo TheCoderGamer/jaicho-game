@@ -2,6 +2,9 @@
 spd = 0.7
 moveX = 0
 moveY = 0
+moviendose = false
+timerNPC = 0
+dirNPC = 0
 
 //SPRITES
 spr_NPC_right = spr_colision;
