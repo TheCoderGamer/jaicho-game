@@ -12,3 +12,4 @@ timer2Cofre = 0
 
 tipoCofre = 1 //0 = Vacio, 1 = Lleno, 2 = Mimico
 
+draw_set_font(fnt_pixel)

@@ -10,13 +10,26 @@ timer1b = 1000000;
 timer1c = 1000000;
 dashPixel = 35;         //cantidad de pixeles de Dash
 
-//Set variables
+//Setear variables
 dir = 0;
 moveX = 0;
 moveY = 0;
 sigXdash = 1;
 sigYdash = 1;
 facing = 0;
+animDashDerecha = false
+animDashIzquierda = false
+animDashAbajo = false
+animDashArriba = false
+timerAnim = 0
+timer5 = 0
+hinput = 0
+vinput = 0
+tempSigXdash = dashPixel
+tempSigYdash = dashPixel
+alphaTemp = 1
+
+noC = c_white
 
 // Iniciar sprite
 image_speed = .6; 

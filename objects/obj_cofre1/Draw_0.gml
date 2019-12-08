@@ -1,3 +1,4 @@
+
 //Dibujar Z animada tutorial
 if place_meeting(x,y, obj_player) && tutorialMode == true {
 	timerCofre = timerCofre +1
@@ -17,7 +18,7 @@ if opening == true {
 	if tipoCofre = 1 && cofreOpen == false  { //Tipo 1
 		if timer2Cofre >= 0  && timer2Cofre < 30 {draw_sprite(spr_cofre,3,x,y)}
 		if timer2Cofre >= 30 && timer2Cofre < 90 {draw_sprite(spr_cofre,4,x,y)}
-		if timer2Cofre >= 90 && timer2Cofre <= 200 {draw_text(x+10,y+10,"100 MONEDAS MAS !!"); draw_sprite(spr_cofre,4,x,y)}
+		if timer2Cofre >= 90 && timer2Cofre <= 200 {draw_text(x+15,y+10,"100 MONEDAS MAS !!"); draw_sprite(spr_cofre,4,x,y)}
 		if timer2Cofre >= 200 {cofreOpen = true; timer2Cofre = 0; monedas = monedas +100}	
 	}
 
