@@ -1,5 +1,7 @@
 /// @description Configuracion inicial (Variables...)
 
+collision_rectangle(x,y,x+5,y+5,obj_player,false,false)
+
 //VARIABLES
 walk_spd = 1;         //velocidad en pixeles andanddo
 run_spd = 2;          //velocidad en pixeles corriendo

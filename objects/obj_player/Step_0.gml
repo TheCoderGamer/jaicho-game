@@ -1,11 +1,12 @@
 /// @description Movimiento jugador
 
 
+
 //....................MOVIMIENTO...................
 //INPUT
 if keyboard_check(vk_control) //correr
-	{spd = run_spd; image_speed = 0.8;}
-else{spd = walk_spd; image_speed = 0.6}
+	{spd = run_spd}
+else{spd = walk_spd}
 
 hinput = keyboard_check(vk_right) - keyboard_check(vk_left); //horizontal
 vinput = keyboard_check(vk_down) - keyboard_check(vk_up); //vertical
@@ -358,7 +359,7 @@ if(hinput !=0 or vinput !=0)
 
 
 
-//.....................MUERTE...................
+//.....................MUERTE.F...................
 if vida <= 0
 	{
 	room_goto(rm_death);
