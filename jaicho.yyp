@@ -95,14 +95,6 @@
             }
         },
         {
-            "Key": "26821bbf-7b93-4b10-b02e-a59744a74149",
-            "Value": {
-                "id": "27e317d0-d78f-4d2d-bb71-789c5f0b374a",
-                "resourcePath": "sprites\\spr_NPC_F84_down\\spr_NPC_F84_down.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "26a2707d-5531-47ef-957a-18ebf61feedd",
             "Value": {
                 "id": "c86ce37e-d550-467d-ab57-216cc9d1563b",
@@ -159,14 +151,6 @@
             }
         },
         {
-            "Key": "32ee5995-4c71-40d2-bf7d-068e026a86e4",
-            "Value": {
-                "id": "1afaffdd-d529-4d8f-927f-ddd7cca8e0ab",
-                "resourcePath": "sprites\\spr_NPC_F84_left\\spr_NPC_F84_left.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "35582d2f-904c-48f7-b47e-a5f9a490d151",
             "Value": {
                 "id": "ab70430a-d5b1-43b1-9efc-714580273d0d",
@@ -188,14 +172,6 @@
                 "id": "933ada92-181b-4c08-b8c6-611e79a80109",
                 "resourcePath": "objects\\obj_NPC_test2\\obj_NPC_test2.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "3e2bd212-14d3-4bea-b524-204c153fc6e4",
-            "Value": {
-                "id": "ffa02231-ab82-411b-844c-ee068b51a5f6",
-                "resourcePath": "sprites\\spr_NPC_F84_up\\spr_NPC_F84_up.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -500,14 +476,6 @@
                 "id": "51d1cf13-7dde-4839-86aa-f5c0698622c7",
                 "resourcePath": "objects\\obj_transition\\obj_transition.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "ebeda1df-08b2-4749-ae50-368eb9adb0bd",
-            "Value": {
-                "id": "e1819e69-821a-4c5f-985e-02645c438d39",
-                "resourcePath": "sprites\\spr_NPC_F84_right\\spr_NPC_F84_right.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

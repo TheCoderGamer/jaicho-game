@@ -6,6 +6,6 @@ spawnY = 740				  //Pos Y ...
 playerFacingAfter = dir.up	  //Direccion a la que mira para entrar
 playerFacingBefore = dir.up   //Direccion a la que mira al salir
 
-//MOVER CAMARA CON JUGADOR
+//MOVER CAMARA CON JUGADOR  (No necesaria modificacion)
 cameraSpawnX = spawnX - (camera.view_width/2)
 cameraSpawnY = spawnY - (camera.view_height/2)

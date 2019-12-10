@@ -30,6 +30,13 @@ enum dir{
 	down = 270
 }
 
+cwtemp = 0
+chtemp = 0
+
+var cw, ch
+cw = cwtemp
+ch = chtemp
+
 
 
 

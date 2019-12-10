@@ -1,0 +1,1 @@
+tipoCofre = 0

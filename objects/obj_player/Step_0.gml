@@ -1,7 +1,4 @@
 /// @description Movimiento jugador
-
-
-
 //....................MOVIMIENTO...................
 //INPUT
 if keyboard_check(vk_control) //correr
@@ -13,12 +10,12 @@ vinput = keyboard_check(vk_down) - keyboard_check(vk_up); //vertical
 
 //FISICAS
 if(hinput !=0 or vinput !=0)
-	{	image_speed = .8; //animacion
+	{
 		dir = point_direction(0,0,hinput,vinput);
 		moveX = lengthdir_x(spd, dir) //horizontal
 		moveY = lengthdir_y(spd, dir) //vertical
 		
-	//-----------------------------------SPRITES------------------
+	//-----------------------------------Facing------------------
 	if dir = 45 {facing = 45}
 	else if dir = 135 {facing = 135}
 	else if dir = 225 {facing = 225}
@@ -47,7 +44,6 @@ else if moveY != 0 {
 	}
 }
 
-//else {facing = -1}
 
 //COLISION
 if moveX != 0{
@@ -75,28 +71,21 @@ if moveY != 0{
 	}
 
 
-//PINCHOS
-if timer1 < 1*1000000 + 5000 {timer1 += delta_time;} else{timer1 = 1000000;} //evitar variable con numeros muy grandes
-if timer1 > 1 * 1000000 && place_meeting(x,y,obj_spikes)
-	{ //cosas a ejecutar si tocas los pinchos
-	timer1 = 0; 
-	vida = vida-1;				
-	}
-
-if timer1b < 1*1000000 + 5000 {timer1b += delta_time;} else{timer1b = 1000000;} //evitar variable con numeros muy grandes
-if timer1b > 1 * 1000000 && place_meeting(x,y,obj_colision)
-	{ //cosas a ejecutar si estas en una colision
-	timer1b = 0; 
-	vida = vida-1;				
-	}
+//Daño por sofocamiento
+if place_meeting(x,y,obj_colision) {
+	timer1b = timer1b +1
+	if timer1b >= 60 {timer1b = 0; vida = vida-1}
+}
 
 
 //............................DASH............................
 
-if timer1c < 1*1000000 + 5000 {timer1c += delta_time;} else{timer1c = 1000000;}
+
 if keyboard_check(vk_shift)
 {
-	if dir == 0 && timer1c > 1000000{ //Derecha +=
+	timer1c = timer1c +1
+	
+	if dir == 0 && timer1c > 60{ //Derecha +=
 		repeat (dashPixel+1){
 			if (!place_meeting(x+sigXdash, y, obj_colision)){
 				sigXdash = sigXdash + 1
@@ -127,7 +116,7 @@ if keyboard_check(vk_shift)
 		}
 	}
 	
-	if dir == 180 && timer1c > 1000000{ //Izquierda -=
+	if dir == 180 && timer1c > 60{ //Izquierda -=
 		repeat (dashPixel+1){
 			if (!place_meeting(x-sigXdash, y, obj_colision)){
 				sigXdash = sigXdash + 1
@@ -158,7 +147,7 @@ if keyboard_check(vk_shift)
 		}
 	}
 	
-	if dir == 270 && timer1c > 1000000{ //Abajo
+	if dir == 270 && timer1c > 60{ //Abajo
 		repeat (dashPixel+1){
 			if (!place_meeting(x, y+sigYdash, obj_colision)){
 				sigYdash = sigYdash + 1
@@ -189,7 +178,7 @@ if keyboard_check(vk_shift)
 		}
 	}
 	
-	if dir == 90 && timer1c > 1000000{ //Arriba
+	if dir == 90 && timer1c > 60{ //Arriba
 		repeat (dashPixel+1){
 			if (!place_meeting(x, y-sigYdash, obj_colision)){
 				sigYdash = sigYdash + 1
@@ -220,7 +209,7 @@ if keyboard_check(vk_shift)
 		}
 	}
 	
-	if dir == 45 && timer1c > 1000000{ //Derecha Arriba
+	if dir == 45 && timer1c > 60{ //Derecha Arriba
 		repeat (dashPixel+1){
 			if (!place_meeting(x+sigXdash, y-sigYdash, obj_colision)){
 				sigYdash = sigYdash +1
@@ -252,7 +241,7 @@ if keyboard_check(vk_shift)
 		}
 	}
 	
-	if dir == 135 && timer1c > 1000000{ //Arriba Izquierda
+	if dir == 135 && timer1c > 60{ //Arriba Izquierda
 		repeat (dashPixel+1){
 			if (!place_meeting(x-sigXdash, y-sigYdash, obj_colision)){
 				sigYdash = sigYdash +1
@@ -284,7 +273,7 @@ if keyboard_check(vk_shift)
 		}
 	}
 	
-	if dir == 225 && timer1c > 1000000{ //Izquierda Abajo
+	if dir == 225 && timer1c > 60{ //Izquierda Abajo
 		repeat (dashPixel+1){
 			if (!place_meeting(x-sigXdash, y+sigYdash, obj_colision)){
 				sigYdash = sigYdash +1
@@ -316,7 +305,7 @@ if keyboard_check(vk_shift)
 		}
 	}
 	
-	if dir == 315 && timer1c > 1000000{ //Abajo Derecha
+	if dir == 315 && timer1c > 60{ //Abajo Derecha
 		repeat (dashPixel+1){
 			if (!place_meeting(x+sigXdash, y+sigYdash, obj_colision)){
 				sigYdash = sigYdash +1
@@ -351,14 +340,7 @@ if keyboard_check(vk_shift)
 	
 
 
-
-	
-	
-	
-	
-	
-
-//TRANSICIONES
+//------------------------------TRANSICIONES-----------------------------
 var inst = instance_place(x,y,obj_transition) //Llamar inst a el obj_transicion con el que se colisiona
 if inst != noone && facing == inst.playerFacingBefore{
 		with(game){ //Pasar variables a Game
@@ -373,6 +355,16 @@ if inst != noone && facing == inst.playerFacingBefore{
 			}		
 		}
 }
+
+
+
+//-----------------------------MONEDAS--------------------------
+var inst2 = instance_place(x,y,obj_moneda)
+if place_meeting(x, y, inst2) {inst2.pickUp = true}
+
+//-----------------------------PINCHOS--------------------------
+var inst3 = instance_place(x,y,obj_spikes)
+if place_meeting(x,y, inst3) {inst.activateSpike = true}
 
 
 

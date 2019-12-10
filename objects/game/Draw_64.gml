@@ -1,5 +1,5 @@
 //EFCTO TRANSICIONES
-if roomTransition {
+if roomTransition == true {
 	if room != spawnRoom{
 			blackAlpha += 0.1
 			if blackAlpha >= 1{room_goto(spawnRoom)}
