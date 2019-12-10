@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "7e3bff04-20eb-4987-bf62-cac4b19e7c82",
+            "Value": {
+                "id": "70134e9c-b5ee-41c7-85de-f00b50be675b",
+                "resourcePath": "sounds\\sn_spikeTrap\\sn_spikeTrap.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "8203bc92-4f94-4721-94b5-dcfbf43c944e",
             "Value": {
                 "id": "a93fcc73-5b57-46b9-9090-3c28fa3a4b47",
@@ -314,7 +322,7 @@
             "Key": "a1e5702e-5b4b-4925-a0f9-e71963d07389",
             "Value": {
                 "id": "22dd1b96-a534-4fb8-aec0-6bf5fae1825d",
-                "resourcePath": "sprites\\spr_playerTemp\\spr_playerTemp.yy",
+                "resourcePath": "sprites\\spr_characterColision\\spr_characterColision.yy",
                 "resourceType": "GMSprite"
             }
         },

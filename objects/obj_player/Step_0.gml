@@ -115,14 +115,14 @@ if keyboard_check(vk_shift)
 				break;
 			}
 		if sigXdash-1 = dashPixel{
-				tempSigXdash = sigXdash
-				tempSigYdash = sigYdash
-				animDashDerecha = true
-				x = x + sigXdash
-				y = y
-				sigXdash = 1
-				sigYdash = 1
-				timer1c = 0
+			tempSigXdash = sigXdash
+			tempSigYdash = sigYdash
+			animDashDerecha = true
+			x = x + sigXdash
+			y = y
+			sigXdash = 1
+			sigYdash = 1
+			timer1c = 0
 			}
 		}
 	}
@@ -146,14 +146,14 @@ if keyboard_check(vk_shift)
 				break;
 			}
 		if sigXdash-1 = dashPixel{
-				tempSigXdash = sigXdash
-				tempSigYdash = sigYdash
-				animDashIzquierda = true
-				x = x - sigXdash
-				y = y
-				sigXdash = 1
-				sigYdash = 1
-				timer1c = 0
+			tempSigXdash = sigXdash
+			tempSigYdash = sigYdash
+			animDashIzquierda = true
+			x = x - sigXdash
+			y = y
+			sigXdash = 1
+			sigYdash = 1
+			timer1c = 0
 			}
 		}
 	}
@@ -177,14 +177,14 @@ if keyboard_check(vk_shift)
 				break;
 			}
 		if sigYdash-1 = dashPixel{
-				tempSigXdash = sigXdash
-				tempSigYdash = sigYdash
-				animDashAbajo = true
-				x = x 
-				y = y + sigYdash
-				sigXdash = 1
-				sigYdash = 1
-				timer1c = 0
+			tempSigXdash = sigXdash
+			tempSigYdash = sigYdash
+			animDashAbajo = true
+			x = x 
+			y = y + sigYdash
+			sigXdash = 1
+			sigYdash = 1
+			timer1c = 0
 			}
 		}
 	}
@@ -208,14 +208,14 @@ if keyboard_check(vk_shift)
 				break;
 			}
 		if sigYdash-1 = dashPixel{
-				tempSigXdash = sigXdash
-				tempSigYdash = sigYdash
-				animDashArriba = true
-				x = x 
-				y = y - sigYdash
-				sigXdash = 1
-				sigYdash = 1
-				timer1c = 0
+			tempSigXdash = sigXdash
+			tempSigYdash = sigYdash
+			animDashArriba = true
+			x = x 
+			y = y - sigYdash
+			sigXdash = 1
+			sigYdash = 1
+			timer1c = 0
 			}
 		}
 	}
@@ -227,8 +227,11 @@ if keyboard_check(vk_shift)
 				sigXdash = sigXdash +1
 			}
 			if (place_meeting(x+sigXdash, y-sigYdash, obj_colision)){
-				x = x + (sigXdash-2);
-				y = y - (sigYdash-2);
+				tempSigXdash = sigXdash/2
+				tempSigYdash = sigYdash/2
+				animDashDerechaArriba = true
+				x = x + ((sigXdash-2)/2);
+				y = y - ((sigYdash-2)/2);
 				moveX = 0
 				moveY = 0
 				sigYdash = 1;
@@ -237,11 +240,14 @@ if keyboard_check(vk_shift)
 				break;
 			}
 		if sigYdash-1 = dashPixel{
-				x = x + sigXdash
-				y = y - sigYdash
-				sigXdash = 1
-				sigYdash = 1
-				timer1c = 0
+			tempSigXdash = sigXdash/2
+			tempSigYdash = sigYdash/2
+			animDashDerechaArriba = true
+			x = x + (sigXdash/2)
+			y = y - (sigYdash/2)
+			sigXdash = 1
+			sigYdash = 1
+			timer1c = 0
 			}
 		}
 	}
@@ -253,8 +259,11 @@ if keyboard_check(vk_shift)
 				sigXdash = sigXdash +1
 			}
 			if (place_meeting(x-sigXdash, y-sigYdash, obj_colision)){
-				x = x - (sigXdash-2);
-				y = y - (sigYdash-2);
+				tempSigXdash = sigXdash/2
+				tempSigYdash = sigYdash/2
+				animDashArribaIzquierda = true
+				x = x - ((sigXdash-2)/2);
+				y = y - ((sigYdash-2)/2);
 				moveX = 0
 				moveY = 0
 				sigYdash = 1;
@@ -263,11 +272,14 @@ if keyboard_check(vk_shift)
 				break;
 			}
 		if sigYdash-1 = dashPixel{
-				x = x - sigXdash
-				y = y - sigYdash
-				sigXdash = 1
-				sigYdash = 1
-				timer1c = 0
+			tempSigXdash = sigXdash/2
+			tempSigYdash = sigYdash/2
+			animDashArribaIzquierda = true
+			x = x - (sigXdash/2)
+			y = y - (sigYdash/2)
+			sigXdash = 1
+			sigYdash = 1
+			timer1c = 0
 			}
 		}
 	}
@@ -279,8 +291,11 @@ if keyboard_check(vk_shift)
 				sigXdash = sigXdash +1
 			}
 			if (place_meeting(x-sigXdash, y+sigYdash, obj_colision)){
-				x = x - (sigXdash-2);
-				y = y + (sigYdash-2);
+				tempSigXdash = sigXdash/2
+				tempSigYdash = sigYdash/2
+				animDashIzquierdaAbajo = true
+				x = x - ((sigXdash-2)/2);
+				y = y + ((sigYdash-2)/2);
 				moveX = 0
 				moveY = 0
 				sigYdash = 1;
@@ -289,11 +304,14 @@ if keyboard_check(vk_shift)
 				break;
 			}
 		if sigYdash-1 = dashPixel{
-				x = x - sigXdash
-				y = y + sigYdash
-				sigXdash = 1
-				sigYdash = 1
-				timer1c = 0
+			tempSigXdash = sigXdash/2
+			tempSigYdash = sigYdash/2
+			animDashIzquierdaAbajo = true
+			x = x - (sigXdash/2)
+			y = y + (sigYdash/2)
+			sigXdash = 1
+			sigYdash = 1
+			timer1c = 0
 			}
 		}
 	}
@@ -305,8 +323,11 @@ if keyboard_check(vk_shift)
 				sigXdash = sigXdash +1
 			}
 			if (place_meeting(x+sigXdash, y+sigYdash, obj_colision)){
-				x = x + (sigXdash-2);
-				y = y + (sigYdash-2);
+				tempSigXdash = sigXdash/2
+				tempSigYdash = sigYdash/2
+				animDashAbajoDerecha = true
+				x = x + ((sigXdash-2)/2);
+				y = y + ((sigYdash-2)/2);
 				moveX = 0
 				moveY = 0
 				sigYdash = 1;
@@ -315,11 +336,14 @@ if keyboard_check(vk_shift)
 				break;
 			}
 		if sigYdash-1 = dashPixel{
-				x = x + sigXdash
-				y = y + sigYdash
-				sigXdash = 1
-				sigYdash = 1
-				timer1c = 0
+			tempSigXdash = sigXdash/2
+			tempSigYdash = sigYdash/2
+			animDashAbajoDerecha = true
+			x = x + (sigXdash/2)
+			y = y + (sigYdash/2)
+			sigXdash = 1
+			sigYdash = 1
+			timer1c = 0
 			}
 		}
 	}	
