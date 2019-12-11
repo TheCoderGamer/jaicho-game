@@ -1,4 +1,5 @@
-//Al pulsar L mostrar las colisiones
+
+//------------------MODO DEBUG---------------------
 if keyboard_check(ord("L")) && tempo1segs > 60 {
 		if debugMode == false {debugMode = true; tempo1segs = 0}
 		else if debugMode == true {debugMode = false; tempo1segs = 0}

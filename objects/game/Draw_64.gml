@@ -1,4 +1,4 @@
-//EFCTO TRANSICIONES
+//----------------------EFCTO TRANSICIONES--------------------
 if roomTransition == true {
 	if room != spawnRoom{
 			blackAlpha += 0.1
@@ -13,4 +13,5 @@ if roomTransition == true {
 	draw_set_alpha(1)
 }
 
+//-----------------DIBUJAR TEXTO MONEDAS-----------------
 draw_text(200, 5, "Monedas " + strMonedas)

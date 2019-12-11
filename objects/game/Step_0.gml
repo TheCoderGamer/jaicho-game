@@ -27,20 +27,25 @@ strMonedas = string(monedas)
 
 
 //Desactivar objetos que esten fuera de la vista --------- ANTILAG -----------
-instance_deactivate_all(true)
-var cam, cleft, ctop, cw, ch
-cam = viewCamID
-cleft = camera_get_view_x(cam)
-ctop = camera_get_view_y(cam)
-cw = cwtemp
-ch = chtemp
+if pausarAntilag == false {
 
-instance_activate_region(cleft-1, ctop-1, cw+3, ch+3, true)
+	instance_deactivate_all(true)
+	var cam, cleft, ctop, cw, ch
+	cam = viewCamID
+	cleft = camera_get_view_x(cam)
+	ctop = camera_get_view_y(cam)
+	cw = cwtemp
+	ch = chtemp
 
-//ACTIVAR OBJETOS IMPORTANTES
-instance_activate_object(game)
-instance_activate_object(camera)
-instance_activate_object(obj_corazonVida)
-instance_activate_object(parent_depht)
-instance_activate_object(depht_manager)
+	instance_activate_region(cleft-1, ctop-1, cw+3, ch+3, true)
+
+	//ACTIVAR OBJETOS IMPORTANTES
+	instance_activate_object(game)
+	instance_activate_object(camera)
+	instance_activate_object(obj_corazonVida)
+	instance_activate_object(parent_depht)
+	instance_activate_object(depht_manager)
+
+}
+
 

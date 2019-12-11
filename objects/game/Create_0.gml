@@ -19,6 +19,7 @@ spawnX = 0
 spawnY = 0
 cameraSpawnX = 0
 cameraSpawnY = 0
+pausarAntilag = false
 
 GUIwidth = display_get_width()
 GUIheight = display_get_height()
@@ -36,6 +37,11 @@ chtemp = 0
 var cw, ch
 cw = cwtemp
 ch = chtemp
+
+
+ds_monedas =     ds_grid_create(3,1)
+ds_cofres =      ds_grid_create(3,1)
+
 
 
 
