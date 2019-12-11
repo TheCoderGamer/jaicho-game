@@ -36,7 +36,8 @@ if opening == true {
 		
 	}	
 }
-
+if cofreOpen == false && opening == false {draw_sprite(spr_cofre,0,x,y)}
 
 if cofreOpen == true && tipoCofre == 0 {draw_sprite(spr_cofre,2,x,y)}
 if cofreOpen == true && tipoCofre == 1 {draw_sprite(spr_cofre,4,x,y)}
+

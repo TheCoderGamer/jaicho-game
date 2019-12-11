@@ -80,11 +80,10 @@ if place_meeting(x,y,obj_colision) {
 
 //............................DASH............................
 
-
+timer1c = timer1c +1
+if timer1c > 300 {timer1c = 60}
 if keyboard_check(vk_shift)
 {
-	timer1c = timer1c +1
-	
 	if dir == 0 && timer1c > 60{ //Derecha +=
 		repeat (dashPixel+1){
 			if (!place_meeting(x+sigXdash, y, obj_colision)){
@@ -93,6 +92,8 @@ if keyboard_check(vk_shift)
 			else if (place_meeting(x+sigXdash, y, obj_colision)){
 				tempSigXdash = sigXdash
 				tempSigYdash = sigYdash
+				tempX = x
+				tempY = y
 				animDashDerecha = true
 				x = x + (sigXdash-2);
 				y = y;			
@@ -106,6 +107,8 @@ if keyboard_check(vk_shift)
 		if sigXdash-1 = dashPixel{
 			tempSigXdash = sigXdash
 			tempSigYdash = sigYdash
+			tempX = x
+			tempY = y
 			animDashDerecha = true
 			x = x + sigXdash
 			y = y
@@ -124,6 +127,8 @@ if keyboard_check(vk_shift)
 			if (place_meeting(x-sigXdash, y, obj_colision)){
 				tempSigXdash = sigXdash
 				tempSigYdash = sigYdash
+				tempX = x
+				tempY = y
 				animDashIzquierda = true		
 				x = x - (sigXdash-2);
 				y = y;
@@ -137,6 +142,8 @@ if keyboard_check(vk_shift)
 		if sigXdash-1 = dashPixel{
 			tempSigXdash = sigXdash
 			tempSigYdash = sigYdash
+			tempX = x
+			tempY = y
 			animDashIzquierda = true
 			x = x - sigXdash
 			y = y
@@ -155,6 +162,8 @@ if keyboard_check(vk_shift)
 			if (place_meeting(x, y+sigYdash, obj_colision)){
 				tempSigXdash = sigXdash
 				tempSigYdash = sigYdash
+				tempX = x
+				tempY = y
 				animDashAbajo = true
 				x = x;
 				y = y + (sigYdash-2);
@@ -168,6 +177,8 @@ if keyboard_check(vk_shift)
 		if sigYdash-1 = dashPixel{
 			tempSigXdash = sigXdash
 			tempSigYdash = sigYdash
+			tempX = x
+			tempY = y
 			animDashAbajo = true
 			x = x 
 			y = y + sigYdash
@@ -186,6 +197,8 @@ if keyboard_check(vk_shift)
 			if (place_meeting(x, y-sigYdash, obj_colision)){
 				tempSigXdash = sigXdash
 				tempSigYdash = sigYdash
+				tempX = x
+				tempY = y
 				animDashArriba = true
 				x = x;
 				y = y - (sigYdash-2);
@@ -199,6 +212,8 @@ if keyboard_check(vk_shift)
 		if sigYdash-1 = dashPixel{
 			tempSigXdash = sigXdash
 			tempSigYdash = sigYdash
+			tempX = x
+			tempY = y
 			animDashArriba = true
 			x = x 
 			y = y - sigYdash
@@ -218,6 +233,8 @@ if keyboard_check(vk_shift)
 			if (place_meeting(x+sigXdash, y-sigYdash, obj_colision)){
 				tempSigXdash = sigXdash/2
 				tempSigYdash = sigYdash/2
+				tempX = x
+				tempY = y
 				animDashDerechaArriba = true
 				x = x + ((sigXdash-2)/2);
 				y = y - ((sigYdash-2)/2);
@@ -231,6 +248,8 @@ if keyboard_check(vk_shift)
 		if sigYdash-1 = dashPixel{
 			tempSigXdash = sigXdash/2
 			tempSigYdash = sigYdash/2
+			tempX = x
+			tempY = y
 			animDashDerechaArriba = true
 			x = x + (sigXdash/2)
 			y = y - (sigYdash/2)
@@ -250,6 +269,8 @@ if keyboard_check(vk_shift)
 			if (place_meeting(x-sigXdash, y-sigYdash, obj_colision)){
 				tempSigXdash = sigXdash/2
 				tempSigYdash = sigYdash/2
+				tempX = x
+				tempY = y
 				animDashArribaIzquierda = true
 				x = x - ((sigXdash-2)/2);
 				y = y - ((sigYdash-2)/2);
@@ -263,6 +284,8 @@ if keyboard_check(vk_shift)
 		if sigYdash-1 = dashPixel{
 			tempSigXdash = sigXdash/2
 			tempSigYdash = sigYdash/2
+			tempX = x
+			tempY = y
 			animDashArribaIzquierda = true
 			x = x - (sigXdash/2)
 			y = y - (sigYdash/2)
@@ -282,6 +305,8 @@ if keyboard_check(vk_shift)
 			if (place_meeting(x-sigXdash, y+sigYdash, obj_colision)){
 				tempSigXdash = sigXdash/2
 				tempSigYdash = sigYdash/2
+				tempX = x
+				tempY = y
 				animDashIzquierdaAbajo = true
 				x = x - ((sigXdash-2)/2);
 				y = y + ((sigYdash-2)/2);
@@ -295,6 +320,8 @@ if keyboard_check(vk_shift)
 		if sigYdash-1 = dashPixel{
 			tempSigXdash = sigXdash/2
 			tempSigYdash = sigYdash/2
+			tempX = x
+			tempY = y
 			animDashIzquierdaAbajo = true
 			x = x - (sigXdash/2)
 			y = y + (sigYdash/2)
@@ -314,6 +341,8 @@ if keyboard_check(vk_shift)
 			if (place_meeting(x+sigXdash, y+sigYdash, obj_colision)){
 				tempSigXdash = sigXdash/2
 				tempSigYdash = sigYdash/2
+				tempX = x
+				tempY = y
 				animDashAbajoDerecha = true
 				x = x + ((sigXdash-2)/2);
 				y = y + ((sigYdash-2)/2);
@@ -327,6 +356,8 @@ if keyboard_check(vk_shift)
 		if sigYdash-1 = dashPixel{
 			tempSigXdash = sigXdash/2
 			tempSigYdash = sigYdash/2
+			tempX = x
+			tempY = y
 			animDashAbajoDerecha = true
 			x = x + (sigXdash/2)
 			y = y + (sigYdash/2)
@@ -364,7 +395,7 @@ if place_meeting(x, y, inst2) {inst2.pickUp = true}
 
 //-----------------------------PINCHOS--------------------------
 var inst3 = instance_place(x,y,obj_spikes)
-if place_meeting(x,y, inst3) {inst.activateSpike = true}
+if place_meeting(x,y, inst3) {inst3.activateSpike = true}
 
 
 

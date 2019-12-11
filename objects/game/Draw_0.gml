@@ -20,6 +20,8 @@ if debugMode == true
 		{draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_yellow, c_yellow, c_yellow, c_yellow, true)}
 	with obj_cofre1
 		{draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_yellow, c_yellow, c_yellow, c_yellow, true)}
-}	
+	show_debug_overlay(true)
+}
+else if debugMode == false {show_debug_overlay(false)}
 	
 	

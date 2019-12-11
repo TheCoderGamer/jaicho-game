@@ -1,7 +1,7 @@
 /// @description Inserte aquí la descripción
 //FullScreen
+tempo1segs = tempo1segs +1
 if keyboard_check(vk_f4) {
-	tempo1segs = tempo1segs +1
 	if tempo1segs >= 60 {
 		if window_get_fullscreen() {window_set_fullscreen(false); tempo1segs = 0;}
 		else {window_set_fullscreen(true); tempo1segs = 0;}
@@ -13,15 +13,18 @@ if keyboard_check(ord("P")) {game_restart();}
 
 //Pantalla titulo (config)
 if firstSetUpDone = false {
-	if tempo4segs < 2000000 + 5000 {tempo4segs += delta_time;} else{tempo4segs = 2000000;} //evitar overflow
-	if tempo4segs >= 2000000 {
+	tempo4segs++
+	if tempo4segs >= 120 {
 		room_goto_next()
 		firstSetUpDone = true
+		tempo4segs = 0
 	}
 }
 
 
 strMonedas = string(monedas)
+
+
 
 //Desactivar objetos que esten fuera de la vista --------- ANTILAG -----------
 instance_deactivate_all(true)
@@ -32,7 +35,12 @@ ctop = camera_get_view_y(cam)
 cw = cwtemp
 ch = chtemp
 
-instance_activate_region(cleft, ctop, cw+5, ch+5, true)
+instance_activate_region(cleft-1, ctop-1, cw+3, ch+3, true)
 
-instance_activate_layer("config")
+//ACTIVAR OBJETOS IMPORTANTES
+instance_activate_object(game)
+instance_activate_object(camera)
+instance_activate_object(obj_corazonVida)
+instance_activate_object(parent_depht)
+instance_activate_object(depht_manager)
 

@@ -143,11 +143,27 @@
             }
         },
         {
+            "Key": "31c464ef-524e-48af-81e9-97c102ad1e53",
+            "Value": {
+                "id": "881b050a-5c89-4261-8b99-34ed38f11bda",
+                "resourcePath": "objects\\parent_depht\\parent_depht.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "32b7e8ce-2c27-4918-bd73-ee2c39c77ff2",
             "Value": {
                 "id": "fa872429-4e9f-4bb4-9d36-b269f9b8187c",
                 "resourcePath": "views\\32b7e8ce-2c27-4918-bd73-ee2c39c77ff2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "337de4be-db5d-491e-8082-71d93dc30231",
+            "Value": {
+                "id": "5ab5b0a7-4cdd-4250-bf25-a3fc39e1ec04",
+                "resourcePath": "sprites\\spr_NPC_M91\\spr_NPC_M91.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -204,6 +220,14 @@
                 "id": "a65172d4-2394-42ac-a045-c98c0b99d9e9",
                 "resourcePath": "sprites\\spr_NPC_F84\\spr_NPC_F84.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5bf9fed6-2a97-4040-91cc-be90322ee0c6",
+            "Value": {
+                "id": "34ecf932-40d9-4e2f-8cdc-25ef83580458",
+                "resourcePath": "objects\\depht_manager\\depht_manager.yy",
+                "resourceType": "GMObject"
             }
         },
         {

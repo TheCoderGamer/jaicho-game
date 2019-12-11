@@ -1,3 +1,4 @@
+event_inherited() //Usar el depht correcto
 //VARIABLES
 //Modo tutorial
 tutorialMode = false

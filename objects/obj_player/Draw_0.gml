@@ -57,82 +57,82 @@ if (hinput = 0 && vinput == 0) {
 //Animacion de Dash
 if animDashDerecha == true {
 	timerAnim = timerAnim +1
-	if timerAnim >= 0  && timerAnim <= 4  {draw_sprite_general(spr_player,0 , 32,64, 30,32,(x-((tempSigXdash/6)*6)) ,y,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.2}
-	if timerAnim >= 1  && timerAnim <= 6  {draw_sprite_general(spr_player,0 , 32,64, 30,32,(x-((tempSigXdash/6)*5)) ,y,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.3}
-	if timerAnim >= 2  && timerAnim <= 8  {draw_sprite_general(spr_player,0 , 32,64, 30,32,(x-((tempSigXdash/6)*4)) ,y,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.4}
-	if timerAnim >= 3  && timerAnim <= 10 {draw_sprite_general(spr_player,0 , 32,64, 30,32,(x-((tempSigXdash/6)*3)) ,y,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.5}
-	if timerAnim >= 4  && timerAnim <= 12 {draw_sprite_general(spr_player,0 , 32,64, 30,32,(x-((tempSigXdash/6)*2)) ,y,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.6}
-	if timerAnim >= 5  && timerAnim <= 14 {draw_sprite_general(spr_player,0 , 32,64, 30,32,(x-((tempSigXdash/6)*1)) ,y,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.7}
+	if timerAnim >= 0  && timerAnim <= 4  {draw_sprite_general(spr_player,0 , 32,64, 30,32,(tempX+((tempSigXdash/6)*1)) ,tempY,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.2}
+	if timerAnim >= 1  && timerAnim <= 6  {draw_sprite_general(spr_player,0 , 32,64, 30,32,(tempX+((tempSigXdash/6)*2)) ,tempY,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.3}
+	if timerAnim >= 2  && timerAnim <= 8  {draw_sprite_general(spr_player,0 , 32,64, 30,32,(tempX+((tempSigXdash/6)*3)) ,tempY,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.4}
+	if timerAnim >= 3  && timerAnim <= 10 {draw_sprite_general(spr_player,0 , 32,64, 30,32,(tempX+((tempSigXdash/6)*4)) ,tempY,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.5}
+	if timerAnim >= 4  && timerAnim <= 12 {draw_sprite_general(spr_player,0 , 32,64, 30,32,(tempX+((tempSigXdash/6)*5)) ,tempY,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.6}
+	if timerAnim >= 5  && timerAnim <= 14 {draw_sprite_general(spr_player,0 , 32,64, 30,32,(tempX+((tempSigXdash/6)*6)) ,tempY,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.7}
 	if timerAnim >= 14 {timerAnim = 0; animDashDerecha = false}	
 }
 if animDashIzquierda == true {
 	timerAnim = timerAnim +1
-	if timerAnim >= 0  && timerAnim <= 4  {draw_sprite_general(spr_player,0 , 32,32, 30,32,(x+((tempSigXdash/6)*6)) ,y,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.2}
-	if timerAnim >= 1  && timerAnim <= 6  {draw_sprite_general(spr_player,0 , 32,32, 30,32,(x+((tempSigXdash/6)*5)) ,y,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.3}
-	if timerAnim >= 2  && timerAnim <= 8  {draw_sprite_general(spr_player,0 , 32,32, 30,32,(x+((tempSigXdash/6)*4)) ,y,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.4}
-	if timerAnim >= 3  && timerAnim <= 10 {draw_sprite_general(spr_player,0 , 32,32, 30,32,(x+((tempSigXdash/6)*3)) ,y,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.5}
-	if timerAnim >= 4  && timerAnim <= 12 {draw_sprite_general(spr_player,0 , 32,32, 30,32,(x+((tempSigXdash/6)*2)) ,y,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.6}
-	if timerAnim >= 5  && timerAnim <= 14 {draw_sprite_general(spr_player,0 , 32,32, 30,32,(x+((tempSigXdash/6)*1)) ,y,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.7}
+	if timerAnim >= 0  && timerAnim <= 4  {draw_sprite_general(spr_player,0 , 32,32, 30,32,(tempX-((tempSigXdash/6)*1)) ,tempY,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.2}
+	if timerAnim >= 1  && timerAnim <= 6  {draw_sprite_general(spr_player,0 , 32,32, 30,32,(tempX-((tempSigXdash/6)*2)) ,tempY,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.3}
+	if timerAnim >= 2  && timerAnim <= 8  {draw_sprite_general(spr_player,0 , 32,32, 30,32,(tempX-((tempSigXdash/6)*3)) ,tempY,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.4}
+	if timerAnim >= 3  && timerAnim <= 10 {draw_sprite_general(spr_player,0 , 32,32, 30,32,(tempX-((tempSigXdash/6)*4)) ,tempY,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.5}
+	if timerAnim >= 4  && timerAnim <= 12 {draw_sprite_general(spr_player,0 , 32,32, 30,32,(tempX-((tempSigXdash/6)*5)) ,tempY,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.6}
+	if timerAnim >= 5  && timerAnim <= 14 {draw_sprite_general(spr_player,0 , 32,32, 30,32,(tempX-((tempSigXdash/6)*6)) ,tempY,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.7}
 	if timerAnim >= 14 {timerAnim = 0; animDashIzquierda = false}	
 }
 if animDashAbajo == true {
 	timerAnim = timerAnim +1
-	if timerAnim >= 0  && timerAnim <= 4  {draw_sprite_general(spr_player,0 , 32,0, 30,32, x,(y-((tempSigYdash/6)*6)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.2}
-	if timerAnim >= 1  && timerAnim <= 6  {draw_sprite_general(spr_player,0 , 32,0, 30,32, x,(y-((tempSigYdash/6)*5)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.3}
-	if timerAnim >= 2  && timerAnim <= 8  {draw_sprite_general(spr_player,0 , 32,0, 30,32, x,(y-((tempSigYdash/6)*4)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.4}
-	if timerAnim >= 3  && timerAnim <= 10 {draw_sprite_general(spr_player,0 , 32,0, 30,32, x,(y-((tempSigYdash/6)*3)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.5}
-	if timerAnim >= 4  && timerAnim <= 12 {draw_sprite_general(spr_player,0 , 32,0, 30,32, x,(y-((tempSigYdash/6)*2)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.6}
-	if timerAnim >= 5  && timerAnim <= 14 {draw_sprite_general(spr_player,0 , 32,0, 30,32, x,(y-((tempSigYdash/6)*1)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.7}
+	if timerAnim >= 0  && timerAnim <= 4  {draw_sprite_general(spr_player,0 , 32,0, 30,32, tempX,(tempY+((tempSigYdash/6)*1)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.2}
+	if timerAnim >= 1  && timerAnim <= 6  {draw_sprite_general(spr_player,0 , 32,0, 30,32, tempX,(tempY+((tempSigYdash/6)*2)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.3}
+	if timerAnim >= 2  && timerAnim <= 8  {draw_sprite_general(spr_player,0 , 32,0, 30,32, tempX,(tempY+((tempSigYdash/6)*3)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.4}
+	if timerAnim >= 3  && timerAnim <= 10 {draw_sprite_general(spr_player,0 , 32,0, 30,32, tempX,(tempY+((tempSigYdash/6)*4)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.5}
+	if timerAnim >= 4  && timerAnim <= 12 {draw_sprite_general(spr_player,0 , 32,0, 30,32, tempX,(tempY+((tempSigYdash/6)*5)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.6}
+	if timerAnim >= 5  && timerAnim <= 14 {draw_sprite_general(spr_player,0 , 32,0, 30,32, tempX,(tempY+((tempSigYdash/6)*6)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.7}
 	if timerAnim >= 14 {timerAnim = 0; animDashAbajo = false}	
 }
 if animDashArriba == true {
 	timerAnim = timerAnim +1
-	if timerAnim >= 0  && timerAnim <= 4  {draw_sprite_general(spr_player,0 , 32,98, 30,32, x,(y+((tempSigYdash/6)*6)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.2}
-	if timerAnim >= 1  && timerAnim <= 6  {draw_sprite_general(spr_player,0 , 32,98, 30,32, x,(y+((tempSigYdash/6)*5)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.3}
-	if timerAnim >= 2  && timerAnim <= 8  {draw_sprite_general(spr_player,0 , 32,98, 30,32, x,(y+((tempSigYdash/6)*4)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.4}
-	if timerAnim >= 3  && timerAnim <= 10 {draw_sprite_general(spr_player,0 , 32,98, 30,32, x,(y+((tempSigYdash/6)*3)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.5}
-	if timerAnim >= 4  && timerAnim <= 12 {draw_sprite_general(spr_player,0 , 32,98, 30,32, x,(y+((tempSigYdash/6)*2)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.6}
-	if timerAnim >= 5  && timerAnim <= 14 {draw_sprite_general(spr_player,0 , 32,98, 30,32, x,(y+((tempSigYdash/6)*1)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.7}
+	if timerAnim >= 0  && timerAnim <= 4  {draw_sprite_general(spr_player,0 , 32,98, 30,32, tempX,(tempY-((tempSigYdash/6)*1)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.2}
+	if timerAnim >= 1  && timerAnim <= 6  {draw_sprite_general(spr_player,0 , 32,98, 30,32, tempX,(tempY-((tempSigYdash/6)*2)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.3}
+	if timerAnim >= 2  && timerAnim <= 8  {draw_sprite_general(spr_player,0 , 32,98, 30,32, tempX,(tempY-((tempSigYdash/6)*3)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.4}
+	if timerAnim >= 3  && timerAnim <= 10 {draw_sprite_general(spr_player,0 , 32,98, 30,32, tempX,(tempY-((tempSigYdash/6)*4)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.5}
+	if timerAnim >= 4  && timerAnim <= 12 {draw_sprite_general(spr_player,0 , 32,98, 30,32, tempX,(tempY-((tempSigYdash/6)*5)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.6}
+	if timerAnim >= 5  && timerAnim <= 14 {draw_sprite_general(spr_player,0 , 32,98, 30,32, tempX,(tempY-((tempSigYdash/6)*6)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.7}
 	if timerAnim >= 14 {timerAnim = 0; animDashArriba = false}	
 }
 if animDashDerechaArriba == true {
 	timerAnim = timerAnim +1
-	if timerAnim >= 0  && timerAnim <= 4  {draw_sprite_general(spr_player,0 , 32,64, 30,32, (x-((tempSigXdash/6)*6)),(y+((tempSigYdash/6)*6)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.2}
-	if timerAnim >= 1  && timerAnim <= 6  {draw_sprite_general(spr_player,0 , 32,64, 30,32, (x-((tempSigXdash/6)*5)),(y+((tempSigYdash/6)*5)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.3}
-	if timerAnim >= 2  && timerAnim <= 8  {draw_sprite_general(spr_player,0 , 32,64, 30,32, (x-((tempSigXdash/6)*4)),(y+((tempSigYdash/6)*4)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.4}
-	if timerAnim >= 3  && timerAnim <= 10 {draw_sprite_general(spr_player,0 , 32,64, 30,32, (x-((tempSigXdash/6)*3)),(y+((tempSigYdash/6)*3)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.5}
-	if timerAnim >= 4  && timerAnim <= 12 {draw_sprite_general(spr_player,0 , 32,64, 30,32, (x-((tempSigXdash/6)*2)),(y+((tempSigYdash/6)*2)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.6}
-	if timerAnim >= 5  && timerAnim <= 14 {draw_sprite_general(spr_player,0 , 32,64, 30,32, (x-((tempSigXdash/6)*1)),(y+((tempSigYdash/6)*1)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.7}
+	if timerAnim >= 0  && timerAnim <= 4  {draw_sprite_general(spr_player,0 , 32,64, 30,32, (tempX+((tempSigXdash/6)*1)),(tempY-((tempSigYdash/6)*1)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.2}
+	if timerAnim >= 1  && timerAnim <= 6  {draw_sprite_general(spr_player,0 , 32,64, 30,32, (tempX+((tempSigXdash/6)*2)),(tempY-((tempSigYdash/6)*2)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.3}
+	if timerAnim >= 2  && timerAnim <= 8  {draw_sprite_general(spr_player,0 , 32,64, 30,32, (tempX+((tempSigXdash/6)*3)),(tempY-((tempSigYdash/6)*3)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.4}
+	if timerAnim >= 3  && timerAnim <= 10 {draw_sprite_general(spr_player,0 , 32,64, 30,32, (tempX+((tempSigXdash/6)*4)),(tempY-((tempSigYdash/6)*4)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.5}
+	if timerAnim >= 4  && timerAnim <= 12 {draw_sprite_general(spr_player,0 , 32,64, 30,32, (tempX+((tempSigXdash/6)*5)),(tempY-((tempSigYdash/6)*5)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.6}
+	if timerAnim >= 5  && timerAnim <= 14 {draw_sprite_general(spr_player,0 , 32,64, 30,32, (tempX+((tempSigXdash/6)*6)),(tempY-((tempSigYdash/6)*6)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.7}
 	if timerAnim >= 14 {timerAnim = 0; animDashDerechaArriba = false}	
 }
 if animDashArribaIzquierda == true {
 	timerAnim = timerAnim +1
-	if timerAnim >= 0  && timerAnim <= 4  {draw_sprite_general(spr_player,0 , 32,32, 30,32, (x+((tempSigXdash/6)*6)),(y+((tempSigYdash/6)*6)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.2}
-	if timerAnim >= 1  && timerAnim <= 6  {draw_sprite_general(spr_player,0 , 32,32, 30,32, (x+((tempSigXdash/6)*5)),(y+((tempSigYdash/6)*5)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.3}
-	if timerAnim >= 2  && timerAnim <= 8  {draw_sprite_general(spr_player,0 , 32,32, 30,32, (x+((tempSigXdash/6)*4)),(y+((tempSigYdash/6)*4)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.4}
-	if timerAnim >= 3  && timerAnim <= 10 {draw_sprite_general(spr_player,0 , 32,32, 30,32, (x+((tempSigXdash/6)*3)),(y+((tempSigYdash/6)*3)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.5}
-	if timerAnim >= 4  && timerAnim <= 12 {draw_sprite_general(spr_player,0 , 32,32, 30,32, (x+((tempSigXdash/6)*2)),(y+((tempSigYdash/6)*2)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.6}
-	if timerAnim >= 5  && timerAnim <= 14 {draw_sprite_general(spr_player,0 , 32,32, 30,32, (x+((tempSigXdash/6)*1)),(y+((tempSigYdash/6)*1)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.7}
+	if timerAnim >= 0  && timerAnim <= 4  {draw_sprite_general(spr_player,0 , 32,32, 30,32, (tempX-((tempSigXdash/6)*1)),(tempY-((tempSigYdash/6)*1)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.2}
+	if timerAnim >= 1  && timerAnim <= 6  {draw_sprite_general(spr_player,0 , 32,32, 30,32, (tempX-((tempSigXdash/6)*2)),(tempY-((tempSigYdash/6)*2)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.3}
+	if timerAnim >= 2  && timerAnim <= 8  {draw_sprite_general(spr_player,0 , 32,32, 30,32, (tempX-((tempSigXdash/6)*3)),(tempY-((tempSigYdash/6)*3)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.4}
+	if timerAnim >= 3  && timerAnim <= 10 {draw_sprite_general(spr_player,0 , 32,32, 30,32, (tempX-((tempSigXdash/6)*4)),(tempY-((tempSigYdash/6)*4)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.5}
+	if timerAnim >= 4  && timerAnim <= 12 {draw_sprite_general(spr_player,0 , 32,32, 30,32, (tempX-((tempSigXdash/6)*5)),(tempY-((tempSigYdash/6)*5)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.6}
+	if timerAnim >= 5  && timerAnim <= 14 {draw_sprite_general(spr_player,0 , 32,32, 30,32, (tempX-((tempSigXdash/6)*6)),(tempY-((tempSigYdash/6)*6)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.7}
 	if timerAnim >= 14 {timerAnim = 0; animDashArribaIzquierda = false}	
 }
 if animDashIzquierdaAbajo == true {
 	timerAnim = timerAnim +1
-	if timerAnim >= 0  && timerAnim <= 4  {draw_sprite_general(spr_player,0 , 32,32, 30,32, (x+((tempSigXdash/6)*6)),(y-((tempSigYdash/6)*6)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.2}
-	if timerAnim >= 1  && timerAnim <= 6  {draw_sprite_general(spr_player,0 , 32,32, 30,32, (x+((tempSigXdash/6)*5)),(y-((tempSigYdash/6)*5)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.3}
-	if timerAnim >= 2  && timerAnim <= 8  {draw_sprite_general(spr_player,0 , 32,32, 30,32, (x+((tempSigXdash/6)*4)),(y-((tempSigYdash/6)*4)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.4}
-	if timerAnim >= 3  && timerAnim <= 10 {draw_sprite_general(spr_player,0 , 32,32, 30,32, (x+((tempSigXdash/6)*3)),(y-((tempSigYdash/6)*3)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.5}
-	if timerAnim >= 4  && timerAnim <= 12 {draw_sprite_general(spr_player,0 , 32,32, 30,32, (x+((tempSigXdash/6)*2)),(y-((tempSigYdash/6)*2)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.6}
-	if timerAnim >= 5  && timerAnim <= 14 {draw_sprite_general(spr_player,0 , 32,32, 30,32, (x+((tempSigXdash/6)*1)),(y-((tempSigYdash/6)*1)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.7}
+	if timerAnim >= 0  && timerAnim <= 4  {draw_sprite_general(spr_player,0 , 32,32, 30,32, (tempX-((tempSigXdash/6)*1)),(tempY+((tempSigYdash/6)*1)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.2}
+	if timerAnim >= 1  && timerAnim <= 6  {draw_sprite_general(spr_player,0 , 32,32, 30,32, (tempX-((tempSigXdash/6)*2)),(tempY+((tempSigYdash/6)*2)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.3}
+	if timerAnim >= 2  && timerAnim <= 8  {draw_sprite_general(spr_player,0 , 32,32, 30,32, (tempX-((tempSigXdash/6)*3)),(tempY+((tempSigYdash/6)*3)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.4}
+	if timerAnim >= 3  && timerAnim <= 10 {draw_sprite_general(spr_player,0 , 32,32, 30,32, (tempX-((tempSigXdash/6)*4)),(tempY+((tempSigYdash/6)*4)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.5}
+	if timerAnim >= 4  && timerAnim <= 12 {draw_sprite_general(spr_player,0 , 32,32, 30,32, (tempX-((tempSigXdash/6)*5)),(tempY+((tempSigYdash/6)*5)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.6}
+	if timerAnim >= 5  && timerAnim <= 14 {draw_sprite_general(spr_player,0 , 32,32, 30,32, (tempX-((tempSigXdash/6)*6)),(tempY+((tempSigYdash/6)*6)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.7}
 	if timerAnim >= 14 {timerAnim = 0; animDashIzquierdaAbajo = false}	
 }
 if animDashAbajoDerecha == true {
 	timerAnim = timerAnim +1
-	if timerAnim >= 0  && timerAnim <= 4  {draw_sprite_general(spr_player,0 , 32,64, 30,32, (x-((tempSigXdash/6)*6)),(y-((tempSigYdash/6)*6)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.2}
-	if timerAnim >= 1  && timerAnim <= 6  {draw_sprite_general(spr_player,0 , 32,64, 30,32, (x-((tempSigXdash/6)*5)),(y-((tempSigYdash/6)*5)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.3}
-	if timerAnim >= 2  && timerAnim <= 8  {draw_sprite_general(spr_player,0 , 32,64, 30,32, (x-((tempSigXdash/6)*4)),(y-((tempSigYdash/6)*4)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.4}
-	if timerAnim >= 3  && timerAnim <= 10 {draw_sprite_general(spr_player,0 , 32,64, 30,32, (x-((tempSigXdash/6)*3)),(y-((tempSigYdash/6)*3)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.5}
-	if timerAnim >= 4  && timerAnim <= 12 {draw_sprite_general(spr_player,0 , 32,64, 30,32, (x-((tempSigXdash/6)*2)),(y-((tempSigYdash/6)*2)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.6}
-	if timerAnim >= 5  && timerAnim <= 14 {draw_sprite_general(spr_player,0 , 32,64, 30,32, (x-((tempSigXdash/6)*1)),(y-((tempSigYdash/6)*1)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.7}
+	if timerAnim >= 0  && timerAnim <= 4  {draw_sprite_general(spr_player,0 , 32,64, 30,32, (tempX+((tempSigXdash/6)*1)),(tempY+((tempSigYdash/6)*1)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.2}
+	if timerAnim >= 1  && timerAnim <= 6  {draw_sprite_general(spr_player,0 , 32,64, 30,32, (tempX+((tempSigXdash/6)*2)),(tempY+((tempSigYdash/6)*2)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.3}
+	if timerAnim >= 2  && timerAnim <= 8  {draw_sprite_general(spr_player,0 , 32,64, 30,32, (tempX+((tempSigXdash/6)*3)),(tempY+((tempSigYdash/6)*3)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.4}
+	if timerAnim >= 3  && timerAnim <= 10 {draw_sprite_general(spr_player,0 , 32,64, 30,32, (tempX+((tempSigXdash/6)*4)),(tempY+((tempSigYdash/6)*4)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.5}
+	if timerAnim >= 4  && timerAnim <= 12 {draw_sprite_general(spr_player,0 , 32,64, 30,32, (tempX+((tempSigXdash/6)*5)),(tempY+((tempSigYdash/6)*5)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.6}
+	if timerAnim >= 5  && timerAnim <= 14 {draw_sprite_general(spr_player,0 , 32,64, 30,32, (tempX+((tempSigXdash/6)*6)),(tempY+((tempSigYdash/6)*6)) ,0.5,0.5,0,noC,noC,noC,noC,alphaTemp); alphaTemp = 0.7}
 	if timerAnim >= 14 {timerAnim = 0; animDashAbajoDerecha = false}	
 }
 

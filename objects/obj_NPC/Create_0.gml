@@ -1,3 +1,8 @@
+event_inherited() //Usar el depht correcto
+//Sprite
+sprNPC = spr_NPC_F84
+
+
 //VARIABLES
 spd = 0.7
 moveX = 0
