@@ -397,6 +397,10 @@ if place_meeting(x, y, inst2) {inst2.pickUp = true}
 var inst3 = instance_place(x,y,obj_spikes)
 if place_meeting(x,y, inst3) {inst3.activateSpike = true}
 
+//-----------------------------PALANCA----------------------------
+var inst4 = instance_place(x,y, obj_palanca)
+if place_meeting(x,y, inst4) {inst4.inArea = true}
+
 
 
 //REALIZAR MOVIMIENTO
