@@ -25,7 +25,7 @@ if firstSetUpDone = false {
 strMonedas = string(monedas)
 
 
-
+/*
 //Desactivar objetos que esten fuera de la vista --------- ANTILAG -----------
 if pausarAntilag == false {
 

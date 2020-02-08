@@ -1,3 +1,5 @@
+if room == rm_main {activarGuardado = true}
+
 //TRANSICIONES
 if !(spawnRoom == -1) {
 	obj_player.x = spawnX
@@ -12,12 +14,13 @@ if !(spawnRoom == -1) {
 
 //----------------------------------GUARDADO DE MONEDAS------------------------
 
-if room == rm_main {
+//if room == rm_main {
 	
+if activarGuardado == true {
 	numerodeMonedas = instance_number(obj_moneda)	//Numero de monedas en la sala
 	
 	if !(spawnRoom == -1) {
-		pausarAntilag = true
+		//pausarAntilag = true
 		if !(numerodeMonedas2 == numerodeMonedas) {
 			with(obj_moneda) {
 				instance_destroy()	
@@ -32,7 +35,7 @@ if room == rm_main {
 					
 				cont2++		
 			}
-		pausarAntilag = false
+		//pausarAntilag = false
 		}			
 	}
 }
@@ -44,7 +47,7 @@ if room == rm_main {
 
 
 
-
+if activarGuardado == true {
 //if !(spawnRoom == -1) && room == rm_main {
 	var inst2
 	var cont3 = 0
@@ -56,7 +59,7 @@ if room == rm_main {
 			cont3++
 		}
 	}
-//}
+}
 
 
 

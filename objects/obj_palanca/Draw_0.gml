@@ -1,6 +1,7 @@
-if activada == false {draw_sprite(spr_palanca,1,x,y)}
+if activada == false {draw_sprite(spr_palanca,0,x,y)}
 
-if inArea == true {
+if place_meeting(x,y, obj_player) {
+	inArea = true
 	//Dibujar Z animada tutorial
 	if tutorialMode == true {
 		temp1 = temp1 +1

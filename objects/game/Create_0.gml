@@ -42,6 +42,9 @@ ch = chtemp
 ds_monedas =     ds_grid_create(3,1)
 ds_cofres =      ds_grid_create(3,1)
 
+activarGuardado = false
+numerodeMonedas2 = 0
+numerodeCofres2 = 0
 
 
 

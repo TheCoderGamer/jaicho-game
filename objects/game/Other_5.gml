@@ -1,7 +1,7 @@
 
 //-------------------------GUARDADO DE MONEDAS---------------------
 
-if room == rm_main {
+if activarGuardado == true {
 
 //Si sales de la habitacion y no hay el mismo numero de monedas que al inicio, guarda las monedas en ds_monedas
 
@@ -25,7 +25,8 @@ if room == rm_main {
 	}
 } 
 
-if room == rm_main {
+//-------------------------GUARDADO DE COFRES---------------------
+if activarGuardado == true {
 	var cont3 = 0
 	var inst2
 	var cont4 = 0
@@ -40,46 +41,3 @@ if room == rm_main {
 		cont3++
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-		ds_grid_resize(ds_moneda_data, ds_grid_width(ds_moneda_data), inst_num)		//Redimensionar con el numero de monedas actual
-		
-		var gw = ds_grid_width(ds_moneda_data)
-		var gh = ds_monedas
-		var cont1 = 0
-		
-		var xx = 0
-		repeat(gw) {
-			var yy = 0
-			repeat(gh) {
-				var inst = ds_monedas[# xx,yy]			//Guardar en datos el dato que corresponda de la tabla
-				
-				ds_moneda_data[# 0, cont1] = inst
-				ds_moneda_data[# 1, cont1] = inst.x
-				ds_moneda_data[# 2, cont1] = inst.y
-				cont1++
-				yy++
-			}	
-			xx++
