@@ -1,3 +1,5 @@
+ABANDONADO. (Fue un proyecto de 1 mes)
+
 # Jaicho Game (Temporal)
 
 Jaicho game (nombre temporal), es un juego tipo RPG diseñado con Game Maker Studio 2. Esta en fase de desarrollo. Esta siendo desarrollado por Nacho Aguilar (Programacion) y Jaime Salvanes (Diseño)
