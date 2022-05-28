@@ -31,8 +31,6 @@ Si quieres contribuir, deja una pull request y si los cambios nos parecieran cor
 ## Authors
 
 * **Nacho Aguilar** - *Programador* - [TheCoderGamer1000](https://github.com/TheCoderGamer1000)
-* **Jaime Salvanes** - *Diseño* - [darkshine-cyber](https://github.com/darkshine-cyber)
-* **Álex Sánchez** - *Desarrollo y Musica* - []()
 
 ## License
 
